@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThoughtDef>
+		<defName>RimJoust_TournamentChampion</defName>
+		<durationDays>5</durationDays>
+		<stages>
+			<li>
+				<label>tournament champion</label>
+				<description>I won the jousting tournament! The crowd chanted my name and now everyone knows what I can do.</description>
+				<baseMoodEffect>10</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RimJoust_CrownedQueen</defName>
+		<durationDays>8</durationDays>
+		<stages>
+			<li>
+				<label>crowned queen of love and beauty</label>
+				<description>The tournament champion crowned me queen of love and beauty in front of everyone. What an honour!</description>
+				<baseMoodEffect>12</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RimJoust_WatchedJoust</defName>
+		<durationDays>2</durationDays>
+		<stages>
+			<li>
+				<label>watched a joust</label>
+				<description>I watched a jousting tournament! The charges, the lances breaking, the crowd shouting. That was a great day.</description>
+				<baseMoodEffect>5</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RimJoust_TourneyFavor</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>20</durationDays>
+		<stages>
+			<li>
+				<label>tournament favour</label>
+				<baseOpinionOffset>25</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RimJoust_MasochistThrill</defName>
+		<durationDays>0.5</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>thrill of the impact</label>
+				<description>That lance slamming into me at full charge... I have to admit, it did something for me.</description>
+				<baseMoodEffect>6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RimJoust_PassedOver</defName>
+		<durationDays>10</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>passed over at the tournament</label>
+				<description>The champion rode right past me to crown someone else, in front of the whole colony. The shame of it. I won't forget this.</description>
+				<baseMoodEffect>-16</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RimJoust_JiltedAtTourney</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>25</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>humiliated me at the tournament</label>
+				<baseOpinionOffset>-40</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RimJoust_RivalCrowned</defName>
+		<thoughtClass>Thought_MemorySocial</thoughtClass>
+		<durationDays>25</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>crowned in my place</label>
+				<baseOpinionOffset>-25</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+	<ThoughtDef>
+		<defName>RimJoust_LostJoust</defName>
+		<durationDays>1</durationDays>
+		<stackLimit>1</stackLimit>
+		<stages>
+			<li>
+				<label>out of the tournament</label>
+				<description>I got knocked out of the tournament. Oh well, that's how it goes, I'll get them next time.</description>
+				<baseMoodEffect>-2</baseMoodEffect>
+			</li>
+			<li>
+				<label>out of the tournament</label>
+				<description>Unhorsed and knocked out of the tournament, in front of everyone too. That stings.</description>
+				<baseMoodEffect>-4</baseMoodEffect>
+			</li>
+			<li>
+				<label>humiliated at the tournament</label>
+				<description>Thrown out of the tournament like a rookie, in front of the whole colony. I want to crawl into a hole.</description>
+				<baseMoodEffect>-6</baseMoodEffect>
+			</li>
+		</stages>
+	</ThoughtDef>
+
+</Defs>

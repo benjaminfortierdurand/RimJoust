@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>RimJoust_JoustingLance</defName>
+		<label>jousting lance</label>
+		<description>A long tournament lance with a blunt coronal head. It is made to knock an opponent off his horse, not to kill him. It often breaks on impact, which is normal in a joust and usually means the blow landed well.</description>
+		<possessionCount>1</possessionCount>
+
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/RimJoust_JoustingLance</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.7, 1.7)</drawSize>
+		</graphicData>
+		<uiIconScale>1.0</uiIconScale>
+
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>120</costStuffCount>
+
+		<statBases>
+			<WorkToMake>8000</WorkToMake>
+			<Mass>5</Mass>
+		</statBases>
+
+		<equippedAngleOffset>-65</equippedAngleOffset>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+
+		<weaponTags>
+			<li>RimJoust_JoustingLance</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>shaft</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>5</power>
+				<cooldownTime>2.5</cooldownTime>
+			</li>
+			<li>
+				<label>coronal</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>3.8</cooldownTime>
+			</li>
+		</tools>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>RimJoust_TourneyMace</defName>
+		<label>tourney mace</label>
+		<description>A blunted melee mace made to bruise and disarm rather than kill. Handed out to every fighter at the start of a grand melee, and taken back afterwards. Nobody really wants to find out what happens with real swords.</description>
+		<possessionCount>1</possessionCount>
+
+		<graphicData>
+			<texPath>Things/Item/Equipment/WeaponMelee/Mace</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.0, 1.0)</drawSize>
+		</graphicData>
+
+		<techLevel>Medieval</techLevel>
+		<costStuffCount>40</costStuffCount>
+
+		<statBases>
+			<WorkToMake>3000</WorkToMake>
+			<Mass>2.5</Mass>
+		</statBases>
+
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+
+		<weaponClasses>
+			<li>Melee</li>
+		</weaponClasses>
+
+		<weaponTags>
+			<li>RimJoust_TourneyMace</li>
+		</weaponTags>
+
+		<tools>
+			<li>
+				<label>handle</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2.0</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<labelUsedInLogging>false</labelUsedInLogging>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2.6</cooldownTime>
+				<armorPenetration>0.13</armorPenetration>
+			</li>
+		</tools>
+	</ThingDef>
+
+</Defs>

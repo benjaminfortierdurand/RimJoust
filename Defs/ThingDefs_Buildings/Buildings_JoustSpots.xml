@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="RimJoust_SpotBase" ParentName="BuildingBase" Abstract="True">
+		<thingClass>RimJoust.Buildings.Building_JoustSpot</thingClass>
+		<category>Building</category>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<stuffCategories>
+			<li>Fabric</li>
+			<li>Metallic</li>
+		</stuffCategories>
+		<costStuffCount>25</costStuffCount>
+		<building>
+			<isPlayerEjectable>true</isPlayerEjectable>
+			<paintable>true</paintable>
+		</building>
+		<comps>
+			<li Class="RimJoust.UI.CompProperties_TournamentBoard" />
+		</comps>
+		<designationCategory>Misc</designationCategory>
+		<constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_SpotBase">
+		<defName>RimJoust_SpotA</defName>
+		<label>joust flag A</label>
+		<description>Marks start point A for a joust. Put it at one end of the list. Flag B goes at the other end, on the same map. The flag takes the colour of the material you use (cloth or metal), so pick a strong colour like red to tell it apart from flag B.</description>
+		<graphicData>
+			<texPath>Things/Building/RimJoust_Flag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_SpotBase">
+		<defName>RimJoust_SpotB</defName>
+		<label>joust flag B</label>
+		<description>Marks start point B for a joust. Put it at one end of the list. Flag A goes at the other end, on the same map. The flag takes the colour of the material you use (cloth or metal), so pick a strong colour like blue to tell it apart from flag A.</description>
+		<graphicData>
+			<texPath>Things/Building/RimJoust_Flag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_SpotBase">
+		<defName>RimJoust_MeleeSpot</defName>
+		<label>melee trophy post</label>
+		<description>The trophy post marking the center of the grand melee ground: an iron-rimmed shield and two crossed axes, so nobody wonders what happens here. Select the post to see the arena boundary: the auto button fits it to your enclosure (railings, walls, doors), the + and - buttons set a circle by hand. Fighters who leave the boundary are herded back to the center.</description>
+		<graphicData>
+			<texPath>Things/Building/RimJoust_MeleeMarker</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.3,1.3)</drawSize>
+		</graphicData>
+		<stuffCategories Inherit="False" />
+		<costStuffCount>0</costStuffCount>
+		<costList>
+			<WoodLog>25</WoodLog>
+		</costList>
+		<comps>
+			<li Class="RimJoust.Buildings.CompProperties_MeleeArena" />
+		</comps>
+	</ThingDef>
+
+</Defs>

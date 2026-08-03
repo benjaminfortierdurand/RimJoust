@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RimJoust_LordSeat.label>siège du seigneur</RimJoust_LordSeat.label>
+	<RimJoust_LordSeat.description>Pose-le sur (ou juste devant) un trône ou une belle chaise face à la lice. Au début du tournoi, le colon le plus prestigieux vient s'y asseoir, les chevaliers se présentent en ligne devant lui, et le tournoi s'ouvre en son honneur. Sans siège posé, pas de cérémonie d'ouverture.</RimJoust_LordSeat.description>
+
+	<RimJoust_ConsortSeat.label>siège de la dame</RimJoust_ConsortSeat.label>
+	<RimJoust_ConsortSeat.description>Pose-le sur (ou juste devant) une belle chaise à côté du siège du seigneur. Au début du tournoi, l'époux ou l'épouse du seigneur vient s'y asseoir pour assister aux joutes à ses côtés. Poses-en plusieurs si le seigneur a plusieurs amours. Sans conjoint, le siège reste vide.</RimJoust_ConsortSeat.description>
+
+</LanguageData>

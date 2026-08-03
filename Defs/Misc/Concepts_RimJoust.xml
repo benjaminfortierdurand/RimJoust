@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ConceptDef>
+		<defName>RimJoust_Concept_Lists</defName>
+		<label>holding a tournament</label>
+		<priority>70</priority>
+		<helpText>You placed a joust flag. Put the other flag at the far end to mark out the lists, mount a few colonists, then click a flag and pick "Hold tournament". The lance is handed out automatically, nothing to craft.</helpText>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>RimJoust_Concept_Jouster</defName>
+		<label>the jouster role</label>
+		<priority>60</priority>
+		<helpText>This button lets you pick which colonists take part in the tournament. If you mark no one, all your mounted colonists joust by default. Handy to enter only your best and keep the rest working.</helpText>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>RimJoust_Concept_Squire</defName>
+		<label>the squire role</label>
+		<priority>55</priority>
+		<helpText>Mark a colonist as a squire and they will pick up fallen knights to clear the lists between bouts. You need a recovery area placed so they know where to carry the wounded.</helpText>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>RimJoust_Concept_Guests</defName>
+		<label>entering guest knights</label>
+		<priority>50</priority>
+		<helpText>Visitors from other factions can joust too. Select a visitor and enter them: they get a lance and a mount for the tournament. A good way to fill the bracket when you are short on colonists.</helpText>
+	</ConceptDef>
+
+	<ConceptDef>
+		<defName>RimJoust_Concept_Bets</defName>
+		<label>betting on bouts</label>
+		<priority>45</priority>
+		<helpText>When a guest knight rides a bout, open the tournament board to wager silver on it. Up to you to spot who stays in the saddle.</helpText>
+	</ConceptDef>
+
+</Defs>

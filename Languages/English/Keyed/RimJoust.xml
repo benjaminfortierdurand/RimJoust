@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Joust messages -->
+	<RimJoust.JoustStarted>To the joust! {0} vs {1}</RimJoust.JoustStarted>
+	<RimJoust.NeedFlagsPlaced>Place a flag A AND a flag B on the map first (Architect → Misc).</RimJoust.NeedFlagsPlaced>
+	<RimJoust.PawnsNeedSameMap>The 2 knights must be on the same map.</RimJoust.PawnsNeedSameMap>
+	<RimJoust.HitButHeldOn>{0} takes the blow and holds in the saddle!</RimJoust.HitButHeldOn>
+	<RimJoust.Unhorsed>{0} has been unhorsed!</RimJoust.Unhorsed>
+	<RimJoust.JoustGo>TO THE JOUST!</RimJoust.JoustGo>
+	<RimJoust.CeremonyHail>Glory to Lord {0}!</RimJoust.CeremonyHail>
+	<RimJoust.CeremonyHailNoName>Glory to the lord!</RimJoust.CeremonyHailNoName>
+	<RimJoust.OathHail>{0} swears fealty!</RimJoust.OathHail>
+	<RimJoust.Oath1>I swear fealty!</RimJoust.Oath1>
+	<RimJoust.Oath2>My lance is yours!</RimJoust.Oath2>
+	<RimJoust.Oath3>For honor and glory!</RimJoust.Oath3>
+	<RimJoust.Oath4>I shall fight with honor!</RimJoust.Oath4>
+
+	<!-- Crowning the Queen of Love and Beauty -->
+	<RimJoust.CoronationTitle>Queen of Love and Beauty</RimJoust.CoronationTitle>
+	<RimJoust.CoronationScandalTag>Scandal</RimJoust.CoronationScandalTag>
+	<RimJoust.CoronationClose>Continue</RimJoust.CoronationClose>
+	<RimJoust.CoronationWife>{0} rides to the rail and lays the wreath of flowers in {1}'s lap. {1} is named queen of love and beauty, just as everyone hoped. A good day for the two of them.</RimJoust.CoronationWife>
+	<RimJoust.CoronationAdmire>With no one in particular to honor, {0} crowns {1} queen of love and beauty. It is {1} who caught {0}'s eye, more than anyone else.</RimJoust.CoronationAdmire>
+	<RimJoust.CoronationScandal>{0} rides slowly past {1}... and lays the wreath in {2}'s lap instead. The whole field falls silent. {1} says nothing, but {1} will not forget this. Some things cannot be undone.</RimJoust.CoronationScandal>
+	<RimJoust.Forfeit>{0} loses their nerve and forfeits. {1} wins without even charging.</RimJoust.Forfeit>
+	<RimJoust.BloodlustMaim>{0} stops jousting and goes for the maim!</RimJoust.BloodlustMaim>
+	<RimJoust.PsychopathKill>{0} aims to kill!</RimJoust.PsychopathKill>
+
+	<!-- Tournament -->
+	<RimJoust.TournamentAlreadyRunning>A tournament is already underway.</RimJoust.TournamentAlreadyRunning>
+	<RimJoust.TournamentCooldown>Not so fast, you just held one. Next tournament possible in {0} days.</RimJoust.TournamentCooldown>
+	<RimJoust.TournamentCooldownGizmo>Next tournament in {0} days.</RimJoust.TournamentCooldownGizmo>
+	<RimJoust.TournamentNeedTwo>A tournament needs at least 2 knights.</RimJoust.TournamentNeedTwo>
+	<RimJoust.NotEnoughKnights>Not enough ready knights. You need at least 2 mounted colonists (ready right now: {0}). Mount more colonists, or enter some visitors. The lance is handed to them automatically.</RimJoust.NotEnoughKnights>
+	<RimJoust.TournamentStarted>The tournament begins! {0} knights compete for glory.</RimJoust.TournamentStarted>
+	<RimJoust.TournamentBoutWon>{0} unhorses {1} and advances to the next round!</RimJoust.TournamentBoutWon>
+	<RimJoust.TournamentBye>{0} advances unopposed (no opponent this round).</RimJoust.TournamentBye>
+	<RimJoust.TournamentNewRound>Tournament round {0}: {1} knights still in the lists.</RimJoust.TournamentNewRound>
+	<RimJoust.TournamentAborted>Tournament cancelled: a list with a flag A and a flag B is required.</RimJoust.TournamentAborted>
+	<RimJoust.TournamentCancelled>The tournament is called off. Knights are released, lances taken back, bets refunded. No cooldown, start again whenever you want.</RimJoust.TournamentCancelled>
+	<RimJoust.CancelTournamentLabel>Call off tournament</RimJoust.CancelTournamentLabel>
+	<RimJoust.CancelTournamentDesc>Cancel the tournament in progress. Everyone is released, mod-given lances are taken back and bets are refunded. Use this if the tournament gets stuck. No cooldown afterwards.</RimJoust.CancelTournamentDesc>
+	<RimJoust.CancelTournamentConfirm>Call off the tournament in progress? Everyone goes home, bets are refunded.</RimJoust.CancelTournamentConfirm>
+	<RimJoust.TournamentNoChampion>The tournament ends with no champion: no one left in the saddle.</RimJoust.TournamentNoChampion>
+	<RimJoust.TournamentNoChampionLetterLabel>Tournament without a champion</RimJoust.TournamentNoChampionLetterLabel>
+	<RimJoust.TournamentChampionLetterLabel>Tournament champion</RimJoust.TournamentChampionLetterLabel>
+	<RimJoust.TournamentChampionLetterText>{0} won the jousting tournament! Beat every challenger and got crowned champion while the crowd cheered. People will remember this one for a long time.</RimJoust.TournamentChampionLetterText>
+	<RimJoust.QueenLetterLabel>Queen of Love and Beauty</RimJoust.QueenLetterLabel>
+	<RimJoust.QueenLetterText>{0}, the tournament champion, crowns {1} queen of love and beauty. The crowd cheers as the knight lays down a crown of flowers to honor her. It is a big honor, and it brings the two of them closer.</RimJoust.QueenLetterText>
+	<RimJoust.ChampionArrivesLabel>A champion arrives</RimJoust.ChampionArrivesLabel>
+	<RimJoust.ChampionArrivesText>{0}, a champion from {1}, shows up at your colony. He wants to test your knights in the joust. Enter him in your next tournament if you have someone good enough to stay in the saddle. He looks really good with a lance.</RimJoust.ChampionArrivesText>
+	<RimJoust.DelegationArrivesLabel>A house comes to compete</RimJoust.DelegationArrivesLabel>
+	<RimJoust.DelegationArrivesText>A delegation of {1} knights from {0} turns up to test themselves against yours. They will hang around near your colony for a while. Select them and enter them in your next tournament while they are here, good for filling out the bracket.</RimJoust.DelegationArrivesText>
+	<RimJoust.IntroLetterLabel>Jousting tournaments</RimJoust.IntroLetterLabel>
+	<RimJoust.IntroLetterText>How to hold a jousting tournament:\n\n1. Put a flag A and a flag B at each end of the lists, with a list barrier between them if you can.\n2. Mount your colonists (Giddy-Up). They get a jousting lance automatically when the tournament starts.\n3. Optional: assign some squires and place a recovery area and a dead spot. Squires drag the wounded and the dead off the lists for you.\n4. Click a flag and pick "Hold tournament".\n\nThe winner becomes champion and crowns a Queen of Love and Beauty. Careful, a joust can kill.\n\nFor the details, the "Guide" button on a flag opens a full guide (also in the mod options).</RimJoust.IntroLetterText>
+
+	<!-- Mod settings -->
+	<RimJoust.Settings.Intro>Set how dangerous jousts are. Changes apply right away, no restart.</RimJoust.Settings.Intro>
+	<RimJoust.Settings.LanceDamage>Lance damage</RimJoust.Settings.LanceDamage>
+	<RimJoust.Settings.DismountChance>Unhorse chance per pass</RimJoust.Settings.DismountChance>
+	<RimJoust.Settings.DangerousHitChance>Dangerous hit risk</RimJoust.Settings.DangerousHitChance>
+	<RimJoust.Settings.DangerousHitHint>(chance a blow hits the head or organs, so coma, bad injury or death)</RimJoust.Settings.DangerousHitHint>
+	<RimJoust.Settings.FallDamage>Fall damage</RimJoust.Settings.FallDamage>
+	<RimJoust.Settings.MeleeDamage>Grand melee damage (lower means fewer fractures)</RimJoust.Settings.MeleeDamage>
+	<RimJoust.ArenaRadiusPlus>Arena: {0} (+1)</RimJoust.ArenaRadiusPlus>
+	<RimJoust.ArenaRadiusMinus>Arena: {0} (-1)</RimJoust.ArenaRadiusMinus>
+	<RimJoust.ArenaRadiusDesc>Adjust the melee arena radius around this post. The white outline shows the boundary in real time while the post is selected: fighters who cross it are herded back to the center, and the crowd settles just outside it.</RimJoust.ArenaRadiusDesc>
+	<RimJoust.ArenaRadiusAuto>Arena: auto</RimJoust.ArenaRadiusAuto>
+	<RimJoust.ArenaRadiusAutoDesc>Detects the enclosure around the post (railings, walls, doors) and fits the arena to its exact shape, rectangles included. The white outline shows the covered surface while the post is selected. The + and - buttons switch back to circle mode. Needs a closed enclosure: if it leaks somewhere, the button will tell you.</RimJoust.ArenaRadiusAutoDesc>
+	<RimJoust.ArenaNotEnclosed>The arena is not enclosed (or is wider than {0} cells). Surround the post with railings or walls, with a door to get in, then try again.</RimJoust.ArenaNotEnclosed>
+	<RimJoust.ArenaAutoFit>Arena fitted to the enclosure: {0} cells covered.</RimJoust.ArenaAutoFit>
+	<RimJoust.Settings.TournamentCooldown>Cooldown between tournaments (days, 0 = none)</RimJoust.Settings.TournamentCooldown>
+	<RimJoust.Settings.TraitEffects>Character trait effects</RimJoust.Settings.TraitEffects>
+	<RimJoust.Settings.TraitEffectsHint>When checked, jousters' traits matter: a brawler unhorses harder, a tough one holds the saddle better, a nimble one dodges, a wimp may forfeit, a bloodlust or psychopath knight may try to wound or kill, and post-tournament mood depends on character.</RimJoust.Settings.TraitEffectsHint>
+	<RimJoust.Settings.AutoPopups>Open windows automatically</RimJoust.Settings.AutoPopups>
+	<RimJoust.Settings.AutoPopupsHint>When checked, the tournament board opens when a tournament starts and the coronation window opens at the end. Uncheck if you'd rather just get the letters: everything stays reachable from the flag and the journal.</RimJoust.Settings.AutoPopupsHint>
+	<RimJoust.Settings.Reset>Reset to defaults</RimJoust.Settings.Reset>
+
+	<!-- Brutal fall -->
+	<RimJoust.RecoverIn>Recovers in ~{0} in-game h</RimJoust.RecoverIn>
+
+	<!-- Joust markers -->
+	<RimJoust.HideSpotLabel>Hide marker</RimJoust.HideSpotLabel>
+	<RimJoust.HideSpotDesc>Hides this marker's graphic. The flag or post is still there and still works, you just don't see it anymore. Useful once your lists are set up, or for screenshots. Select several markers to hide them all at once.</RimJoust.HideSpotDesc>
+
+	<!-- Guest knights -->
+	<RimJoust.EnrollGuestLabel>Enter in tournament</RimJoust.EnrollGuestLabel>
+	<RimJoust.EnrollGuestTooWeak>Jousting skill too low ({0}). Needs at least {1} to joust.</RimJoust.EnrollGuestTooWeak>
+	<RimJoust.EnrollGuestDesc>Enters this visitor from another faction as a guest knight. When the tournament starts they get a lance and a mount, then joust along with your colonists. Select several visitors to enter more than one.</RimJoust.EnrollGuestDesc>
+	<RimJoust.StartTournamentLabel>Hold tournament</RimJoust.StartTournamentLabel>
+	<RimJoust.StartTournamentDesc>Starts a jousting tournament. All your mounted colonists, plus any guest knights you entered, fight in single elimination until one is crowned champion. The lance is handed out automatically. You need flags A and B placed.</RimJoust.StartTournamentDesc>
+	<RimJoust.ViewResultsLabel>View results</RimJoust.ViewResultsLabel>
+	<RimJoust.ViewResultsDesc>Reopen the last tournament board with the champion, the Queen of Love and Beauty, the bracket and the journal.</RimJoust.ViewResultsDesc>
+
+	<!-- Tournament board -->
+	<RimJoust.BoardGizmoLabel>Tournament board</RimJoust.BoardGizmoLabel>
+	<RimJoust.BoardGizmoDesc>Show the current tournament: ongoing bout, knights in the lists, advancing, and eliminated.</RimJoust.BoardGizmoDesc>
+	<RimJoust.BoardTitle>Jousting tournament, round {0}</RimJoust.BoardTitle>
+	<RimJoust.BoardSubline>{0} entrants · {1} still in · {2} out</RimJoust.BoardSubline>
+	<RimJoust.BoardWins>{0} w.</RimJoust.BoardWins>
+	<RimJoust.BoardCurrentBout>Current bout</RimJoust.BoardCurrentBout>
+	<RimJoust.BoardWaiting>In the lists this round ({0})</RimJoust.BoardWaiting>
+	<RimJoust.BoardAdvanced>Advancing to next round ({0})</RimJoust.BoardAdvanced>
+	<RimJoust.BoardEliminated>Eliminated ({0})</RimJoust.BoardEliminated>
+	<RimJoust.BoardNobody>—</RimJoust.BoardNobody>
+	<RimJoust.DeadTag>(dead)</RimJoust.DeadTag>
+	<RimJoust.BoardTitleFinished>Jousting tournament finished</RimJoust.BoardTitleFinished>
+	<RimJoust.BoardChampionSection>Champion</RimJoust.BoardChampionSection>
+
+	<!-- Board tabs -->
+	<RimJoust.TabOverview>Overview</RimJoust.TabOverview>
+	<RimJoust.TabBracket>Bracket</RimJoust.TabBracket>
+	<RimJoust.TabJournal>Journal</RimJoust.TabJournal>
+	<RimJoust.TabHall>Hall of fame</RimJoust.TabHall>
+
+	<!-- Hall of fame -->
+	<RimJoust.HallEmpty>No finished tournaments yet. Win one and history begins.</RimJoust.HallEmpty>
+	<RimJoust.HallTitles>Titles</RimJoust.HallTitles>
+	<RimJoust.HallTitleCount>{0} title(s)</RimJoust.HallTitleCount>
+	<RimJoust.HallHistory>Past tournaments ({0})</RimJoust.HallHistory>
+	<RimJoust.HallQueen>Queen: {0}</RimJoust.HallQueen>
+	<RimJoust.HallMeta>{0} knights, {1} rounds</RimJoust.HallMeta>
+
+	<!-- Grand melee -->
+	<RimJoust.MeleeStartLabel>Start melee</RimJoust.MeleeStartLabel>
+	<RimJoust.MeleeStartDesc>Start a grand melee here. Every colonist tagged as a jouster fights, on foot, last one standing wins. Everyone gets a blunted tourney mace for the fight and their own weapon back afterwards. Down does not mean dead, but bring bandages anyway.</RimJoust.MeleeStartDesc>
+	<RimJoust.MeleeCancelLabel>Cancel melee</RimJoust.MeleeCancelLabel>
+	<RimJoust.MeleeCancelDesc>Call off the melee in progress. Everyone stops fighting and goes home.</RimJoust.MeleeCancelDesc>
+	<RimJoust.MeleeNeedFighters>Tag at least 2 colonists as jousters first (toggle on the colonist, same tag as the tournament).</RimJoust.MeleeNeedFighters>
+	<RimJoust.MeleeBlockedByTournament>A jousting tournament is in progress.</RimJoust.MeleeBlockedByTournament>
+	<RimJoust.MeleeStarted>The grand melee begins: {0} fighters take the field!</RimJoust.MeleeStarted>
+	<RimJoust.MeleeFight>Lay on!</RimJoust.MeleeFight>
+	<RimJoust.MeleeEliminated>{0} is down. {1} still standing.</RimJoust.MeleeEliminated>
+	<RimJoust.MeleeWinner>{0} is the last one standing and wins the grand melee!</RimJoust.MeleeWinner>
+	<RimJoust.MeleeCancelled>The melee is called off.</RimJoust.MeleeCancelled>
+
+	<!-- Archery contest -->
+	<RimJoust.ArcheryStartLabel>Start archery contest</RimJoust.ArcheryStartLabel>
+	<RimJoust.ArcheryStartDesc>Start an archery contest here. Every colonist tagged as a jouster lines up, gets a loaner recurve bow, and shoots three volleys at the butt. Most hits wins, shooting skill breaks ties. Keep the firing lane clear, stray arrows do not ask first.</RimJoust.ArcheryStartDesc>
+	<RimJoust.ArcheryCancelLabel>Cancel contest</RimJoust.ArcheryCancelLabel>
+	<RimJoust.ArcheryCancelDesc>Call off the archery contest. Everyone gets their own weapon back and goes home.</RimJoust.ArcheryCancelDesc>
+	<RimJoust.ArcheryNeedTarget>Place an archery butt first, 10 to 20 cells from the flag, with a clear lane between them.</RimJoust.ArcheryNeedTarget>
+	<RimJoust.ArcheryNeedFighters>Tag at least 2 colonists as jousters first (toggle on the colonist).</RimJoust.ArcheryNeedFighters>
+	<RimJoust.EventBlocked>Another tournament event is in progress.</RimJoust.EventBlocked>
+	<RimJoust.ArcheryStarted>The archery contest begins: {0} archers at the line!</RimJoust.ArcheryStarted>
+	<RimJoust.ArcheryVolley>Volley {0} of {1}!</RimJoust.ArcheryVolley>
+	<RimJoust.ArcheryStandings>After volley {0}: {1} leads with {2} hit(s).</RimJoust.ArcheryStandings>
+	<RimJoust.ArcheryWinner>{0} wins the archery contest with {1} hit(s)!</RimJoust.ArcheryWinner>
+	<RimJoust.ArcheryScores>Final tally: {0}</RimJoust.ArcheryScores>
+	<RimJoust.ArcheryCancelled>The archery contest is called off.</RimJoust.ArcheryCancelled>
+	<RimJoust.ArcheryTargetGone>The archery butt is gone. Hard to score hits on thin air.</RimJoust.ArcheryTargetGone>
+	<RimJoust.ArcheryLaneBlocked>Cannot line up all the archers: the shooting line is blocked, or the butt is too far (23 cells max from every spot on the line, with clear sight).</RimJoust.ArcheryLaneBlocked>
+
+	<!-- Grand tournament -->
+	<RimJoust.GrandStartLabel>Hold a GRAND tournament</RimJoust.GrandStartLabel>
+	<RimJoust.GrandStartDesc>Three events back to back: the joust, the archery contest, then the grand melee. Every event awards points by ranking, and the total crowns the grand champion. Mounted colonists compete, same as a tournament (and if you tagged jousters, only they enter). Needs the lists (flags A and B), the melee trophy post, the archery line and its butt, all on this map.</RimJoust.GrandStartDesc>
+	<RimJoust.GrandMissing>Missing for a grand tournament: {0}.</RimJoust.GrandMissing>
+	<RimJoust.GrandNeedLists>the lists (flags A and B)</RimJoust.GrandNeedLists>
+	<RimJoust.GrandNeedMelee>the melee trophy post</RimJoust.GrandNeedMelee>
+	<RimJoust.GrandNeedArchery>the archery line and its butt</RimJoust.GrandNeedArchery>
+	<RimJoust.GrandStarted>The grand tournament begins: {0} knights, three events. Chroniclers, sharpen your quills.</RimJoust.GrandStarted>
+	<RimJoust.GrandJoustEventWon>{0} wins the jousting event!</RimJoust.GrandJoustEventWon>
+	<RimJoust.GrandNextArchery>The jousting event is over. Next event: archery. The contenders catch their breath.</RimJoust.GrandNextArchery>
+	<RimJoust.GrandNextMelee>Final event: the grand melee. Let the maces do the talking.</RimJoust.GrandNextMelee>
+	<RimJoust.GrandSkipArchery>Not enough contenders standing, or no usable archery range: the archery event is skipped.</RimJoust.GrandSkipArchery>
+	<RimJoust.GrandSkipMelee>Not enough contenders standing: the melee is skipped.</RimJoust.GrandSkipMelee>
+	<RimJoust.GrandChampionLetterLabel>Grand champion</RimJoust.GrandChampionLetterLabel>
+	<RimJoust.GrandChampionLetterText>{0} wins the Grand Tournament! Three events, many bruises, and one name everyone will remember.</RimJoust.GrandChampionLetterText>
+	<RimJoust.GrandStandingsHeader>Overall standings:</RimJoust.GrandStandingsHeader>
+	<RimJoust.GrandCancelLabel>Cancel grand tournament</RimJoust.GrandCancelLabel>
+	<RimJoust.GrandCancelDesc>Call off the grand tournament and whatever event is running. Everyone is released and gets their gear back.</RimJoust.GrandCancelDesc>
+	<RimJoust.GrandCancelConfirm>Cancel the grand tournament in progress?</RimJoust.GrandCancelConfirm>
+	<RimJoust.GrandCancelled>The grand tournament is called off.</RimJoust.GrandCancelled>
+	<RimJoust.HallGrandTag>Grand tournament</RimJoust.HallGrandTag>
+
+	<!-- Champion letter recap -->
+	<RimJoust.RecapTitle>How the tournament went:</RimJoust.RecapTitle>
+	<RimJoust.RecapRound>Round {0}</RimJoust.RecapRound>
+	<RimJoust.RecapFinal>Final</RimJoust.RecapFinal>
+	<RimJoust.RecapBout>{0} unhorsed {1}</RimJoust.RecapBout>
+	<RimJoust.RecapBye>{0} advanced unopposed</RimJoust.RecapBye>
+
+	<!-- Elimination bracket -->
+	<RimJoust.BracketBye>(bye)</RimJoust.BracketBye>
+	<RimJoust.BracketEmpty>No bouts yet.</RimJoust.BracketEmpty>
+	<RimJoust.LegendAdvanced>Advancing</RimJoust.LegendAdvanced>
+	<RimJoust.LegendLive>Live</RimJoust.LegendLive>
+	<RimJoust.LegendEliminated>Out / dead</RimJoust.LegendEliminated>
+	<RimJoust.LocateTip>Click to locate this knight.</RimJoust.LocateTip>
+
+	<!-- Results screen -->
+	<RimJoust.ResultsChampion>Tournament champion</RimJoust.ResultsChampion>
+	<RimJoust.ResultsQueen>Queen of Love and Beauty: {0}</RimJoust.ResultsQueen>
+
+	<!-- Event journal -->
+	<RimJoust.JournalEmpty>No events yet.</RimJoust.JournalEmpty>
+	<RimJoust.LogTournamentStart>The tournament begins: {0} knights entered.</RimJoust.LogTournamentStart>
+	<RimJoust.LogBoutStart>Round {0}: {1} faces {2}.</RimJoust.LogBoutStart>
+	<RimJoust.LogBoutResult>Round {0}: {1} unhorsed {2}.</RimJoust.LogBoutResult>
+	<RimJoust.LogBye>{0} gets a bye this round (no opponent).</RimJoust.LogBye>
+	<RimJoust.LogNewRound>Round {0}: {1} jousters still in the running.</RimJoust.LogNewRound>
+	<RimJoust.LogChampion>{0} wins the tournament!</RimJoust.LogChampion>
+	<RimJoust.LogQueen>{0} crowns {1} Queen of Love and Beauty.</RimJoust.LogQueen>
+	<RimJoust.LogForfeit>Round {0}: {1} wins, {2} forfeited.</RimJoust.LogForfeit>
+
+	<!-- Squire -->
+	<RimJoust.SquireToggleLabel>Tournament squire</RimJoust.SquireToggleLabel>
+	<RimJoust.SquireToggleDesc>Mark this colonist as a squire. During a tournament squires pick up unhorsed knights and carry them to the recovery area, so the list is clear for the next bout.</RimJoust.SquireToggleDesc>
+	<RimJoust.JousterToggleLabel>Tournament jouster</RimJoust.JousterToggleLabel>
+	<RimJoust.JousterToggleDesc>Marks this colonist as a jouster. When you start a tournament, only the colonists you marked (and mounted) take part. If you mark no one, all your mounted colonists joust by default. The lance is handed to them automatically, no crafting needed.</RimJoust.JousterToggleDesc>
+
+	<!-- Bets -->
+	<RimJoust.BetHeader>Bets</RimJoust.BetHeader>
+	<RimJoust.BetSilver>Silver: {0}</RimJoust.BetSilver>
+	<RimJoust.BetWaiting>Waiting for the next bout...</RimJoust.BetWaiting>
+	<RimJoust.BetActive>Bet: {0} on {1} (x{2})</RimJoust.BetActive>
+	<RimJoust.BetPlaced>Bet placed: {0} on {1} (x{2}).</RimJoust.BetPlaced>
+	<RimJoust.BetWon>Bet won! {0} takes it, you rake in {1} silver.</RimJoust.BetWon>
+	<RimJoust.BetLost>Bet lost. {0} silver gone.</RimJoust.BetLost>
+	<RimJoust.BetAlready>You already have a bet running.</RimJoust.BetAlready>
+	<RimJoust.BetNoBout>No bout running right now.</RimJoust.BetNoBout>
+	<RimJoust.BetNoGuest>No guest knight in this bout, nothing to bet on.</RimJoust.BetNoGuest>
+	<RimJoust.BetClosed>Too late, they're charging. Bets are closed.</RimJoust.BetClosed>
+	<RimJoust.BetNeedSilver>Not enough silver (you need {0}).</RimJoust.BetNeedSilver>
+
+	<!-- Guide -->
+	<RimJoust.GuideGizmoLabel>Guide</RimJoust.GuideGizmoLabel>
+	<RimJoust.GuideGizmoDesc>Opens the tournament guide: how to lay out the lists, hold a tournament, the roles, betting and the crowning.</RimJoust.GuideGizmoDesc>
+	<RimJoust.RoleGizmosLabel>Role buttons on colonists</RimJoust.RoleGizmosLabel>
+	<RimJoust.RoleGizmosDesc>Shows or hides the Jouster, Squire and Enter buttons on pawns. Turn it off if you don't want those buttons stuck on every colonist between tournaments. Turn it back on when you set up a tournament.</RimJoust.RoleGizmosDesc>
+	<RimJoust.GuestArrivalsLabel>Visiting knights</RimJoust.GuestArrivalsLabel>
+	<RimJoust.GuestArrivalsDesc>Lets foreign knights (a lone champion and whole house delegations) come to challenge your colony. They only show up once you have placed a set of lists. Turn it off if you don't want visiting jousters.</RimJoust.GuestArrivalsDesc>
+	<RimJoust.Settings.OpenGuide>Open the tournament guide</RimJoust.Settings.OpenGuide>
+	<RimJoust.Guide.Title>Tournament guide</RimJoust.Guide.Title>
+
+	<RimJoust.Guide.ListsTitle>Laying out the lists</RimJoust.Guide.ListsTitle>
+	<RimJoust.Guide.ListsBody>A joust is run down the lists: a straight lane between two flags.\n\n- Place a flag A and a flag B (Architect → Misc) at each end, on the same map. Use clearly different colors so you don't mix them up.\n- A list barrier down the middle helps the horses charge straight.\n- You can add a recovery area and a dead spot: squires use them to clear fallen knights.\n\nOnce the lists are laid out you never touch them again. The "Hide marker" button on a flag hides the marker for clean screenshots without breaking anything.</RimJoust.Guide.ListsBody>
+
+	<RimJoust.Guide.RolesTitle>The roles: jouster and squire</RimJoust.Guide.RolesTitle>
+	<RimJoust.Guide.RolesBody>Select a colonist to see their role buttons.\n\nJouster: you pick who takes part in the tournament. If you mark no one, all your mounted colonists joust by default. Handy to enter only your best.\n\nSquire: during a tournament they pick up fallen knights and carry them to the recovery area, clearing the lists between bouts. They need a recovery area placed so they know where to take them.</RimJoust.Guide.RolesBody>
+
+	<RimJoust.Guide.StartTitle>Holding a tournament</RimJoust.Guide.StartTitle>
+	<RimJoust.Guide.StartBody>1. Mount your jousters (Giddy-Up). Any mount will do.\n2. If you like, enter visitors from other factions as guest knights.\n3. Click a flag and pick "Hold tournament".\n\nThe jousting lance is handed out automatically at the start and taken back at the end: nothing to craft. You need at least two ready jousters to start.</RimJoust.Guide.StartBody>
+
+	<RimJoust.Guide.DuringTitle>During the tournament</RimJoust.Guide.DuringTitle>
+	<RimJoust.Guide.DuringBody>Knights ride single elimination. On each pass a lance blow can unhorse the other rider: armor, shield, the jouster's skill (a mix of Melee for the strike and Animals for handling the mount) and traits all matter.\n\nOpen the tournament board to follow the current bout, the bracket and the journal. If a guest knight is in a bout, you can wager silver on it.\n\nIt stays dangerous: a blow can badly wound, or even kill.</RimJoust.Guide.DuringBody>
+
+	<RimJoust.Guide.AfterTitle>Champion and queen</RimJoust.Guide.AfterTitle>
+	<RimJoust.Guide.AfterBody>The last one in the saddle is crowned champion. They then name a Queen of Love and Beauty and lay a crown of flowers in her lap.\n\nMost often they crown the one they love. But if they admire someone else far more, it can turn into a scandal, and the passed-over one will not forget. A window tells you who is crowned and why.</RimJoust.Guide.AfterBody>
+
+	<RimJoust.Guide.MeleeTitle>The grand melee</RimJoust.Guide.MeleeTitle>
+	<RimJoust.Guide.MeleeBody>One rule: last one standing.\n\n- Place the melee trophy post (Architect → Misc) in the middle of a clear ground, ideally fenced in with a door.\n- Select the post: the white outline shows the arena boundary. The "Arena: auto" button fits it to your enclosure, the + and - buttons set a circle by hand. Fighters who leave are herded back to the center.\n- Click "Start melee": colonists tagged as jousters dismount, get a blunted tourney mace (their own weapon comes back afterwards), form a circle, and at the horn everyone fights everyone.\n\nDown means out, not dead: maces make bruises, not holes. The "Grand melee damage" slider in the options sets the brutality, and the crowd settles around the arena on its own.</RimJoust.Guide.MeleeBody>
+
+	<RimJoust.Guide.ArcheryTitle>The archery contest</RimJoust.Guide.ArcheryTitle>
+	<RimJoust.Guide.ArcheryBody>- Place the archery line flag, and the butt 10-20 cells across from it, with a clear lane between them. Nothing precious or alive behind the butt: stray arrows do not ask first.\n- Click the flag: colonists tagged as jousters line up, each gets a loaner recurve bow (fairness first, we test the archer, not the arsenal), and shoot three volleys at the butt.\n\nEvery hit counts, with the shooter's name popping above the target. Most hits wins, Shooting skill breaks ties. Black eyes and bad arms cost accuracy, as they should. The crowd watches politely behind the line, never downrange.</RimJoust.Guide.ArcheryBody>
+
+	<RimJoust.Guide.GrandTitle>The Grand Tournament</RimJoust.Guide.GrandTitle>
+	<RimJoust.Guide.GrandBody>Three events back to back, like in the chronicles: the joust, the archery contest, then the grand melee.\n\n- You need the full setup on the same map: the lists (flags A and B), the melee trophy post, the archery line and its butt.\n- Mount your knights and click "Hold a GRAND tournament" on a lists flag. Mounted colonists compete, same as a regular tournament.\n\nEvery event awards points by ranking. The wounded fight on as long as they can stand; anyone down skips the event. At the end, the total crowns the grand champion: a letter with the overall standings, honors, the Queen of Love and Beauty, and a "Grand tournament" entry in the hall of fame.</RimJoust.Guide.GrandBody>
+
+	<RimJoust.Guide.SafetyTitle>Settings and danger</RimJoust.Guide.SafetyTitle>
+	<RimJoust.Guide.SafetyBody>In the mod options you can set lance damage, unhorse chance, dangerous hit risk, fall damage, grand melee damage and the cooldown between tournaments.\n\nTrait effects (brawler, tough, nimble, wimp, bloodlust, psychopath...) can be turned on or off.\n\nJousting uses no skill of its own: it leans on your Melee (the lance strike) and your Animals (handling the mount). The melee is pure Melee, and the archery contest pure Shooting. To make better champions, train all of it, at the quintain or in tournaments.</RimJoust.Guide.SafetyBody>
+
+	<!-- Quintain -->
+	<RimJoust.TrainQuintain>Train at the quintain</RimJoust.TrainQuintain>
+	<RimJoust.TrainQuintainNeedMount>Train at the quintain (must be mounted)</RimJoust.TrainQuintainNeedMount>
+	<RimJoust.QuintainUnhorsed>{0} takes the sandbag full on and falls off the horse!</RimJoust.QuintainUnhorsed>
+
+</LanguageData>

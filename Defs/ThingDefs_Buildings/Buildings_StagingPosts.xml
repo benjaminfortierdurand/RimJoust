@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef Name="RimJoust_StagingPostBase" ParentName="BuildingBase" Abstract="True">
+		<thingClass>RimJoust.Buildings.Building_JoustSpot</thingClass>
+		<category>Building</category>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>0</WorkToBuild>
+			<Flammability>0</Flammability>
+		</statBases>
+		<building>
+			<isPlayerEjectable>true</isPlayerEjectable>
+		</building>
+		<designationCategory>Misc</designationCategory>
+		<constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_StagingPostBase">
+		<defName>RimJoust_KnightPost</defName>
+		<label>knight's post</label>
+		<description>Marks a knight's post, just a spot on the ground. During a tournament the waiting knights stand on this spot near the list before they ride into the joust. Place one per knight. If you place none, the knights gather up on their own.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/PartySpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_StagingPostBase">
+		<defName>RimJoust_SquirePost</defName>
+		<label>squire's post</label>
+		<description>Marks a squire's post. Colonists set as squires wait here, ready to carry fallen knights to the recovery area. Put it near the list.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/CaravanHitchingSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_StagingPostBase">
+		<defName>RimJoust_DeadSpot</defName>
+		<label>fallen knights' spot</label>
+		<description>Marks where squires carry knights killed during a tournament, instead of leaving them on the list. Put beds around it. The squire lays the dead in a free bed if there is one, otherwise he puts the body on the ground next to the marker. If you place no fallen knights' spot, the bodies just get dragged off the list.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/AnimalBed/AnimalSleepSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_StagingPostBase">
+		<defName>RimJoust_LordSeat</defName>
+		<label>lord's seat</label>
+		<description>Place it on (or right in front of) a throne or a fine chair facing the lists. When the tournament starts, your most prestigious colonist comes to sit there, the knights line up before him, and the tournament opens in his honor. With no seat placed, there's no opening ceremony.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/PartySpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_StagingPostBase">
+		<defName>RimJoust_ConsortSeat</defName>
+		<label>consort's seat</label>
+		<description>Place it on (or right in front of) a fine chair next to the lord's seat. When the tournament starts, the lord's spouse comes to sit there and watch the jousts at their side. Place several if the lord has several loves. With no partner, the seat stays empty.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/PartySpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="RimJoust_StagingPostBase">
+		<defName>RimJoust_HorseSpot</defName>
+		<label>horse spot</label>
+		<description>Marks where squires bring loose mounts left by unhorsed knights and tie them up with a rope until the tournament is over. You can put fences and a gate around it to make a paddock if you want. When the tournament ends the mounts are freed and go back to their usual pen on their own.</description>
+		<graphicData>
+			<texPath>Things/Building/Misc/AnimalBed/AnimalSleepSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+</Defs>

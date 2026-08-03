@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RimJoust_RecoverySpot</defName>
+		<label>recovery area</label>
+		<description>Marks where squires carry unhorsed knights so they can recover away from the list. Put beds around it, medical ones if you can. The squire lays the fallen knight in a free bed to get treated. If there is no bed nearby he just puts him down on the ground next to the marker.</description>
+
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<useHitPoints>true</useHitPoints>
+		<statBases>
+			<MaxHitPoints>80</MaxHitPoints>
+			<WorkToBuild>200</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costStuffCount>10</costStuffCount>
+		<stuffCategories>
+			<li>Woody</li>
+		</stuffCategories>
+		<graphicData>
+			<texPath>Things/Building/Production/CraftingSpot</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+		<building>
+			<isPlayerEjectable>true</isPlayerEjectable>
+		</building>
+		<designationCategory>Misc</designationCategory>
+		<constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+	</ThingDef>
+
+</Defs>

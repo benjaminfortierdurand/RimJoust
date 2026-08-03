@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IncidentDef>
+		<defName>RimJoust_ChampionArrives</defName>
+		<label>foreign champion</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>RimJoust.IncidentWorker_ChampionArrives</workerClass>
+		<baseChance>0.35</baseChance>
+		<minRefireDays>50</minRefireDays>
+	</IncidentDef>
+
+	<IncidentDef>
+		<defName>RimJoust_TourneyDelegation</defName>
+		<label>tournament delegation</label>
+		<category>Misc</category>
+		<targetTags>
+			<li>Map_PlayerHome</li>
+		</targetTags>
+		<workerClass>RimJoust.IncidentWorker_TourneyDelegation</workerClass>
+		<baseChance>0.30</baseChance>
+		<minRefireDays>60</minRefireDays>
+	</IncidentDef>
+
+</Defs>

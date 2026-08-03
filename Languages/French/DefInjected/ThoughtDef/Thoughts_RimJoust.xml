@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RimJoust_TournamentChampion.stages.0.label>champion du tournoi</RimJoust_TournamentChampion.stages.0.label>
+	<RimJoust_TournamentChampion.stages.0.description>J'ai gagné le tournoi de joute ! La foule a crié mon nom. Tout le monde sait ce que je vaux maintenant.</RimJoust_TournamentChampion.stages.0.description>
+
+	<RimJoust_CrownedQueen.stages.0.label>couronné reine d'amour et de beauté</RimJoust_CrownedQueen.stages.0.label>
+	<RimJoust_CrownedQueen.stages.0.description>Le champion du tournoi m'a couronnée reine d'amour et de beauté devant tout le monde. Quel honneur !</RimJoust_CrownedQueen.stages.0.description>
+
+	<RimJoust_WatchedJoust.stages.0.label>a assisté à une joute</RimJoust_WatchedJoust.stages.0.label>
+	<RimJoust_WatchedJoust.stages.0.description>J'ai vu un tournoi de joute ! Les charges, les lances qui se brisent, la foule qui hurle. Ça fait du bien.</RimJoust_WatchedJoust.stages.0.description>
+
+	<RimJoust_TourneyFavor.stages.0.label>faveur du tournoi</RimJoust_TourneyFavor.stages.0.label>
+
+	<RimJoust_PassedOver.stages.0.label>délaissé au tournoi</RimJoust_PassedOver.stages.0.label>
+	<RimJoust_PassedOver.stages.0.description>Le champion m'a passé sous le nez pour couronner une autre, devant toute la colonie. Quelle humiliation. Ça, je ne l'oublierai pas.</RimJoust_PassedOver.stages.0.description>
+
+	<RimJoust_JiltedAtTourney.stages.0.label>m'a humilié au tournoi</RimJoust_JiltedAtTourney.stages.0.label>
+
+	<RimJoust_RivalCrowned.stages.0.label>couronnée à ma place</RimJoust_RivalCrowned.stages.0.label>
+
+	<RimJoust_MasochistThrill.stages.0.label>le frisson de l'impact</RimJoust_MasochistThrill.stages.0.label>
+	<RimJoust_MasochistThrill.stages.0.description>Cette lance qui me percute en pleine charge... j'avoue, ça m'a fait quelque chose.</RimJoust_MasochistThrill.stages.0.description>
+
+	<RimJoust_LostJoust.stages.0.label>sorti du tournoi</RimJoust_LostJoust.stages.0.label>
+	<RimJoust_LostJoust.stages.0.description>Je me suis fait sortir du tournoi. Bon, c'est le jeu, on remettra ça la prochaine fois.</RimJoust_LostJoust.stages.0.description>
+	<RimJoust_LostJoust.stages.1.label>sorti du tournoi</RimJoust_LostJoust.stages.1.label>
+	<RimJoust_LostJoust.stages.1.description>Désarçonné et éliminé du tournoi, devant tout le monde en plus. Ça la fout mal.</RimJoust_LostJoust.stages.1.description>
+	<RimJoust_LostJoust.stages.2.label>humilié au tournoi</RimJoust_LostJoust.stages.2.label>
+	<RimJoust_LostJoust.stages.2.description>Viré du tournoi comme un débutant, devant toute la colonie. J'ai envie de rentrer sous terre.</RimJoust_LostJoust.stages.2.description>
+
+</LanguageData>

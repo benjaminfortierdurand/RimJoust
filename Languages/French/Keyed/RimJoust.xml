@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!-- Messages de joute -->
+	<RimJoust.JoustStarted>À la joute ! {0} vs {1}</RimJoust.JoustStarted>
+	<RimJoust.NeedFlagsPlaced>Place d'abord un fanion A ET un fanion B sur la carte (Architecte → Divers).</RimJoust.NeedFlagsPlaced>
+	<RimJoust.PawnsNeedSameMap>Les 2 chevaliers doivent être sur la même carte.</RimJoust.PawnsNeedSameMap>
+	<RimJoust.HitButHeldOn>{0} encaisse le coup et tient en selle !</RimJoust.HitButHeldOn>
+	<RimJoust.Unhorsed>{0} a été désarçonné !</RimJoust.Unhorsed>
+	<RimJoust.JoustGo>À LA JOUTE !</RimJoust.JoustGo>
+	<RimJoust.CeremonyHail>Gloire au seigneur {0} !</RimJoust.CeremonyHail>
+	<RimJoust.CeremonyHailNoName>Gloire au seigneur !</RimJoust.CeremonyHailNoName>
+	<RimJoust.OathHail>{0} jure fidélité !</RimJoust.OathHail>
+	<RimJoust.Oath1>Je jure fidélité !</RimJoust.Oath1>
+	<RimJoust.Oath2>Ma lance est vôtre !</RimJoust.Oath2>
+	<RimJoust.Oath3>Pour l'honneur et la gloire !</RimJoust.Oath3>
+	<RimJoust.Oath4>Je combattrai avec honneur !</RimJoust.Oath4>
+
+	<!-- Sacre de la reine d'amour et de beauté -->
+	<RimJoust.CoronationTitle>Reine d'amour et de beauté</RimJoust.CoronationTitle>
+	<RimJoust.CoronationScandalTag>Scandale</RimJoust.CoronationScandalTag>
+	<RimJoust.CoronationClose>Continuer</RimJoust.CoronationClose>
+	<RimJoust.CoronationWife>{0} s'avance jusqu'à la barrière et dépose la couronne de fleurs sur les genoux de {1}. {1} reçoit le titre de reine d'amour et de beauté, comme tout le monde l'espérait. Belle journée pour eux deux.</RimJoust.CoronationWife>
+	<RimJoust.CoronationAdmire>Sans personne de particulier à honorer, {0} couronne {1} reine d'amour et de beauté. C'est {1} qui a retenu toute son attention, plus que quiconque.</RimJoust.CoronationAdmire>
+	<RimJoust.CoronationScandal>{0} passe lentement devant {1}... et dépose la couronne sur les genoux de {2} à la place. Le silence tombe sur la lice. {1} ne dit rien, mais {1} n'oubliera pas. Certaines choses ne se rattrapent jamais.</RimJoust.CoronationScandal>
+	<RimJoust.Forfeit>{0} prend peur et déclare forfait. {1} l'emporte sans même charger.</RimJoust.Forfeit>
+	<RimJoust.BloodlustMaim>{0} ne joute plus, il cherche à mutiler son adversaire !</RimJoust.BloodlustMaim>
+	<RimJoust.PsychopathKill>{0} vise pour tuer !</RimJoust.PsychopathKill>
+
+	<!-- Tournoi -->
+	<RimJoust.TournamentAlreadyRunning>Un tournoi est déjà en cours.</RimJoust.TournamentAlreadyRunning>
+	<RimJoust.TournamentCooldown>Pas si vite, on vient d'en faire un. Prochain tournoi possible dans {0} jours.</RimJoust.TournamentCooldown>
+	<RimJoust.TournamentCooldownGizmo>Prochain tournoi dans {0} jours.</RimJoust.TournamentCooldownGizmo>
+	<RimJoust.TournamentNeedTwo>Il faut au moins 2 chevaliers pour un tournoi.</RimJoust.TournamentNeedTwo>
+	<RimJoust.NotEnoughKnights>Pas assez de chevaliers prêts. Il en faut au moins 2 à cheval (prêts pour l'instant : {0}). Mets d'autres colons en selle, ou inscris des visiteurs. La lance leur est donnée automatiquement.</RimJoust.NotEnoughKnights>
+	<RimJoust.TournamentStarted>Le tournoi commence ! {0} chevaliers s'affrontent pour la gloire.</RimJoust.TournamentStarted>
+	<RimJoust.TournamentBoutWon>{0} désarçonne {1} et se qualifie pour le tour suivant !</RimJoust.TournamentBoutWon>
+	<RimJoust.TournamentBye>{0} est qualifié d'office (pas d'adversaire ce tour).</RimJoust.TournamentBye>
+	<RimJoust.TournamentNewRound>Tour {0} du tournoi : {1} chevaliers encore en lice.</RimJoust.TournamentNewRound>
+	<RimJoust.TournamentAborted>Le tournoi est annulé : il faut une lice avec un fanion A et un fanion B.</RimJoust.TournamentAborted>
+	<RimJoust.TournamentCancelled>Le tournoi est annulé. Les chevaliers sont libérés, les lances récupérées, les paris remboursés. Pas de délai, tu peux relancer quand tu veux.</RimJoust.TournamentCancelled>
+	<RimJoust.CancelTournamentLabel>Annuler le tournoi</RimJoust.CancelTournamentLabel>
+	<RimJoust.CancelTournamentDesc>Annule le tournoi en cours. Tout le monde est libéré, les lances prêtées sont récupérées et les paris remboursés. À utiliser si le tournoi reste bloqué. Aucun délai ensuite.</RimJoust.CancelTournamentDesc>
+	<RimJoust.CancelTournamentConfirm>Annuler le tournoi en cours ? Tout le monde rentre, les paris sont remboursés.</RimJoust.CancelTournamentConfirm>
+	<RimJoust.TournamentNoChampion>Le tournoi s'achève sans champion : plus personne en selle.</RimJoust.TournamentNoChampion>
+	<RimJoust.TournamentNoChampionLetterLabel>Tournoi sans champion</RimJoust.TournamentNoChampionLetterLabel>
+	<RimJoust.TournamentChampionLetterLabel>Champion du tournoi</RimJoust.TournamentChampionLetterLabel>
+	<RimJoust.TournamentChampionLetterText>{0} a gagné le tournoi de joute ! Plus personne pour le désarçonner, il reste seul en selle. La foule crie son nom. Voilà un champion qu'on va pas oublier de sitôt.</RimJoust.TournamentChampionLetterText>
+	<RimJoust.QueenLetterLabel>Reine d'amour et de beauté</RimJoust.QueenLetterLabel>
+	<RimJoust.QueenLetterText>{0}, le champion du tournoi, désigne {1} reine d'amour et de beauté. Il pose la couronne de fleurs sur sa tête devant tout le monde. C'est un sacré honneur, et ça les rapproche tous les deux.</RimJoust.QueenLetterText>
+	<RimJoust.ChampionArrivesLabel>Un champion débarque</RimJoust.ChampionArrivesLabel>
+	<RimJoust.ChampionArrivesText>{0}, un champion venu de chez {1}, se pointe à ta colonie. Il veut se mesurer à tes chevaliers en joute. Inscris-le à ton prochain tournoi si t'as quelqu'un d'assez bon pour le tenir en selle. À la lance il a l'air vraiment balèze.</RimJoust.ChampionArrivesText>
+	<RimJoust.DelegationArrivesLabel>Une maison se présente</RimJoust.DelegationArrivesLabel>
+	<RimJoust.DelegationArrivesText>Une délégation de {1} chevaliers de chez {0} débarque pour se frotter aux tiens. Ils vont traîner un moment près de ta colonie. Sélectionne-les et inscris-les à ton prochain tournoi tant qu'ils sont là, de quoi bien remplir le tableau.</RimJoust.DelegationArrivesText>
+	<RimJoust.IntroLetterLabel>Tournois de joute</RimJoust.IntroLetterLabel>
+	<RimJoust.IntroLetterText>Pour monter un tournoi de joute :\n\n1. Pose un fanion A et un fanion B aux deux bouts de la lice. C'est mieux avec une barrière de lice au milieu.\n2. Mets tes colons à cheval (Giddy-Up). La lance de joute leur est donnée automatiquement au tournoi.\n3. Si tu veux, désigne des écuyers et pose une aire de récupération plus un point des défunts. Les écuyers iront ramasser les blessés et les morts pour dégager la lice.\n4. Clique sur un fanion, puis « Organiser le tournoi ».\n\nCelui qui gagne devient champion et couronne sa reine d'amour et de beauté. Fais gaffe quand même, une joute ça peut tuer.\n\nPour le détail, le bouton « Guide » sur un fanion ouvre un guide complet (aussi dans les options du mod).</RimJoust.IntroLetterText>
+
+	<!-- Réglages du mod -->
+	<RimJoust.Settings.Intro>Ici tu règles à quel point les joutes sont dangereuses. Pas besoin de relancer le jeu, ça prend effet tout de suite.</RimJoust.Settings.Intro>
+	<RimJoust.Settings.LanceDamage>Dégâts de la lance</RimJoust.Settings.LanceDamage>
+	<RimJoust.Settings.DismountChance>Chance de désarçonnement par passe</RimJoust.Settings.DismountChance>
+	<RimJoust.Settings.DangerousHitChance>Risque de coup dangereux</RimJoust.Settings.DangerousHitChance>
+	<RimJoust.Settings.DangerousHitHint>(les chances qu'un coup parte dans la tête ou les organes : coma, grosse blessure, des fois la mort)</RimJoust.Settings.DangerousHitHint>
+	<RimJoust.Settings.FallDamage>Dégâts de la chute</RimJoust.Settings.FallDamage>
+	<RimJoust.Settings.MeleeDamage>Dégâts en mêlée générale (plus bas = moins de fractures)</RimJoust.Settings.MeleeDamage>
+	<RimJoust.ArenaRadiusPlus>Arène : {0} (+1)</RimJoust.ArenaRadiusPlus>
+	<RimJoust.ArenaRadiusMinus>Arène : {0} (-1)</RimJoust.ArenaRadiusMinus>
+	<RimJoust.ArenaRadiusDesc>Ajuste le rayon de l'arène de mêlée autour de ce poteau. Le contour blanc montre la limite en temps réel quand le poteau est sélectionné : les combattants qui la franchissent sont ramenés vers le centre, et le public s'installe juste derrière.</RimJoust.ArenaRadiusDesc>
+	<RimJoust.ArenaRadiusAuto>Arène : auto</RimJoust.ArenaRadiusAuto>
+	<RimJoust.ArenaRadiusAutoDesc>Détecte l'enceinte autour du poteau (rambardes, murs, portes) et cale l'arène exactement sur sa forme, rectangle compris. Le contour blanc montre la surface retenue quand le poteau est sélectionné. Les boutons + et - repassent en mode cercle. Il faut une enceinte fermée : si ça fuit quelque part, le bouton te le dira.</RimJoust.ArenaRadiusAutoDesc>
+	<RimJoust.ArenaNotEnclosed>L'arène n'est pas fermée (ou fait plus de {0} cases de rayon). Entoure le poteau de rambardes ou de murs, avec une porte pour entrer, puis réessaie.</RimJoust.ArenaNotEnclosed>
+	<RimJoust.ArenaAutoFit>Arène calée sur l'enceinte : {0} cases couvertes.</RimJoust.ArenaAutoFit>
+	<RimJoust.Settings.TournamentCooldown>Délai entre 2 tournois (jours, 0 = aucun)</RimJoust.Settings.TournamentCooldown>
+	<RimJoust.Settings.TraitEffects>Effets des traits de caractère</RimJoust.Settings.TraitEffects>
+	<RimJoust.Settings.TraitEffectsHint>Quand c'est coché, les traits des jouteurs comptent : un bagarreur désarçonne mieux, un coriace tient mieux en selle, un agile esquive, une mauviette peut déclarer forfait, un sanguinaire ou un psychopathe peut chercher à blesser ou tuer, et l'humeur après le tournoi dépend du caractère.</RimJoust.Settings.TraitEffectsHint>
+	<RimJoust.Settings.AutoPopups>Ouvrir les fenêtres automatiquement</RimJoust.Settings.AutoPopups>
+	<RimJoust.Settings.AutoPopupsHint>Quand c'est coché, le tableau du tournoi s'ouvre au démarrage et la fenêtre du sacre s'ouvre à la fin. Décoche si tu préfères juste les lettres : tout reste accessible via le fanion et le journal.</RimJoust.Settings.AutoPopupsHint>
+	<RimJoust.Settings.Reset>Réinitialiser les valeurs par défaut</RimJoust.Settings.Reset>
+
+	<!-- Chute brutale -->
+	<RimJoust.RecoverIn>Récupère dans ~{0} h de jeu</RimJoust.RecoverIn>
+
+	<!-- Marqueurs de joute -->
+	<RimJoust.HideSpotLabel>Masquer le repère</RimJoust.HideSpotLabel>
+	<RimJoust.HideSpotDesc>Cache ce marqueur. Le fanion ou le poste est toujours là et marche pareil, c'est juste qu'on le voit plus. Pratique une fois ta lice montée, ou pour faire des captures d'écran propres. Sélectionne plusieurs marqueurs d'un coup pour tous les cacher en même temps.</RimJoust.HideSpotDesc>
+
+	<!-- Chevaliers invités -->
+	<RimJoust.EnrollGuestLabel>Inscrire au tournoi</RimJoust.EnrollGuestLabel>
+	<RimJoust.EnrollGuestTooWeak>Niveau de joute trop faible ({0}). Il faut au moins {1} pour jouter.</RimJoust.EnrollGuestTooWeak>
+	<RimJoust.EnrollGuestDesc>Inscrit ce visiteur d'une autre faction comme chevalier invité. Quand le tournoi démarre, il reçoit une lance, on le met à cheval et il joute avec tes colons. Tu peux en sélectionner plusieurs pour les inscrire tous d'un coup.</RimJoust.EnrollGuestDesc>
+	<RimJoust.StartTournamentLabel>Organiser le tournoi</RimJoust.StartTournamentLabel>
+	<RimJoust.StartTournamentDesc>Démarre le tournoi. Tous tes colons à cheval, plus les invités que t'as inscrits, s'affrontent en élimination directe jusqu'à ce qu'il reste un champion. La lance est fournie automatiquement à chacun. Il faut que les fanions A et B soient posés avant.</RimJoust.StartTournamentDesc>
+	<RimJoust.ViewResultsLabel>Voir les résultats</RimJoust.ViewResultsLabel>
+	<RimJoust.ViewResultsDesc>Rouvre le tableau du dernier tournoi avec le champion, la reine d'amour et de beauté, l'arbre des duels et le journal.</RimJoust.ViewResultsDesc>
+
+	<!-- Tableau du tournoi -->
+	<RimJoust.BoardGizmoLabel>Tableau du tournoi</RimJoust.BoardGizmoLabel>
+	<RimJoust.BoardGizmoDesc>Montre où en est le tournoi : le duel du moment, qui est encore en lice, qui passe au tour d'après et qui est éliminé.</RimJoust.BoardGizmoDesc>
+	<RimJoust.BoardTitle>Tournoi de joute, tour {0}</RimJoust.BoardTitle>
+	<RimJoust.BoardSubline>{0} participants · {1} en lice · {2} éliminés</RimJoust.BoardSubline>
+	<RimJoust.BoardWins>{0} v.</RimJoust.BoardWins>
+	<RimJoust.BoardCurrentBout>Duel en cours</RimJoust.BoardCurrentBout>
+	<RimJoust.BoardWaiting>En lice ce tour ({0})</RimJoust.BoardWaiting>
+	<RimJoust.BoardAdvanced>Qualifiés pour le tour suivant ({0})</RimJoust.BoardAdvanced>
+	<RimJoust.BoardEliminated>Éliminés ({0})</RimJoust.BoardEliminated>
+	<RimJoust.BoardNobody>—</RimJoust.BoardNobody>
+	<RimJoust.DeadTag>(mort)</RimJoust.DeadTag>
+	<RimJoust.BoardTitleFinished>Tournoi de joute terminé</RimJoust.BoardTitleFinished>
+	<RimJoust.BoardChampionSection>Champion</RimJoust.BoardChampionSection>
+
+	<!-- Onglets du tableau -->
+	<RimJoust.TabOverview>Vue d'ensemble</RimJoust.TabOverview>
+	<RimJoust.TabBracket>Arbre</RimJoust.TabBracket>
+	<RimJoust.TabJournal>Journal</RimJoust.TabJournal>
+	<RimJoust.TabHall>Palmarès</RimJoust.TabHall>
+
+	<!-- Palmarès -->
+	<RimJoust.HallEmpty>Aucun tournoi achevé pour l'instant. Gagnez-en un et l'histoire commence.</RimJoust.HallEmpty>
+	<RimJoust.HallTitles>Titres</RimJoust.HallTitles>
+	<RimJoust.HallTitleCount>{0} titre(s)</RimJoust.HallTitleCount>
+	<RimJoust.HallHistory>Tournois passés ({0})</RimJoust.HallHistory>
+	<RimJoust.HallQueen>Reine : {0}</RimJoust.HallQueen>
+	<RimJoust.HallMeta>{0} chevaliers, {1} manches</RimJoust.HallMeta>
+
+	<!-- Mêlée générale -->
+	<RimJoust.MeleeStartLabel>Lancer la mêlée</RimJoust.MeleeStartLabel>
+	<RimJoust.MeleeStartDesc>Lance une mêlée générale ici. Tous les colons marqués Jouteur se battent, à pied, dernier debout vainqueur. Chacun reçoit une masse de tournoi émoussée pour le combat et récupère son arme après. À terre ne veut pas dire mort, mais prévois des bandages quand même.</RimJoust.MeleeStartDesc>
+	<RimJoust.MeleeCancelLabel>Annuler la mêlée</RimJoust.MeleeCancelLabel>
+	<RimJoust.MeleeCancelDesc>Arrête la mêlée en cours. Tout le monde arrête de se battre et rentre.</RimJoust.MeleeCancelDesc>
+	<RimJoust.MeleeNeedFighters>Marque d'abord au moins 2 colons comme Jouteur (le bouton sur le colon, même marque que pour le tournoi).</RimJoust.MeleeNeedFighters>
+	<RimJoust.MeleeBlockedByTournament>Un tournoi de joute est en cours.</RimJoust.MeleeBlockedByTournament>
+	<RimJoust.MeleeStarted>La mêlée générale commence : {0} combattants entrent en lice !</RimJoust.MeleeStarted>
+	<RimJoust.MeleeFight>Chargez !</RimJoust.MeleeFight>
+	<RimJoust.MeleeEliminated>{0} est au tapis. {1} encore debout.</RimJoust.MeleeEliminated>
+	<RimJoust.MeleeWinner>{0} est le dernier debout et remporte la mêlée générale !</RimJoust.MeleeWinner>
+	<RimJoust.MeleeCancelled>La mêlée est annulée.</RimJoust.MeleeCancelled>
+
+	<!-- Concours de tir à l'arc -->
+	<RimJoust.ArcheryStartLabel>Lancer le concours de tir</RimJoust.ArcheryStartLabel>
+	<RimJoust.ArcheryStartDesc>Lance un concours de tir à l'arc ici. Tous les colons marqués Jouteur s'alignent, reçoivent un arc recourbé de prêt, et tirent trois volées sur la butte. Le plus de touches gagne, la compétence Tir départage. Garde la ligne de tir dégagée, les flèches perdues ne préviennent pas.</RimJoust.ArcheryStartDesc>
+	<RimJoust.ArcheryCancelLabel>Annuler le concours</RimJoust.ArcheryCancelLabel>
+	<RimJoust.ArcheryCancelDesc>Arrête le concours de tir. Chacun récupère son arme et rentre.</RimJoust.ArcheryCancelDesc>
+	<RimJoust.ArcheryNeedTarget>Pose d'abord une butte de tir, à 10-20 cases du fanion, avec une ligne dégagée entre les deux.</RimJoust.ArcheryNeedTarget>
+	<RimJoust.ArcheryNeedFighters>Marque d'abord au moins 2 colons comme Jouteur (le bouton sur le colon).</RimJoust.ArcheryNeedFighters>
+	<RimJoust.EventBlocked>Une autre épreuve est en cours.</RimJoust.EventBlocked>
+	<RimJoust.ArcheryStarted>Le concours de tir commence : {0} archers au pas de tir !</RimJoust.ArcheryStarted>
+	<RimJoust.ArcheryVolley>Volée {0} sur {1} !</RimJoust.ArcheryVolley>
+	<RimJoust.ArcheryStandings>Après la volée {0} : {1} mène avec {2} touche(s).</RimJoust.ArcheryStandings>
+	<RimJoust.ArcheryWinner>{0} remporte le concours de tir avec {1} touche(s) !</RimJoust.ArcheryWinner>
+	<RimJoust.ArcheryScores>Tableau final : {0}</RimJoust.ArcheryScores>
+	<RimJoust.ArcheryCancelled>Le concours de tir est annulé.</RimJoust.ArcheryCancelled>
+	<RimJoust.ArcheryTargetGone>La butte de tir a disparu. Difficile de compter les touches dans le vide.</RimJoust.ArcheryTargetGone>
+	<RimJoust.ArcheryLaneBlocked>Impossible d'aligner tous les archers : ligne de tir bloquée, ou butte trop loin (23 cases max depuis chaque case de la ligne, avec vue dégagée).</RimJoust.ArcheryLaneBlocked>
+
+	<!-- Grand tournoi -->
+	<RimJoust.GrandStartLabel>Organiser un GRAND tournoi</RimJoust.GrandStartLabel>
+	<RimJoust.GrandStartDesc>Trois épreuves à la suite : la joute, le tir à l'arc, puis la mêlée générale. Chaque épreuve rapporte des points selon le classement, et le cumul désigne le grand champion. Les colons à cheval participent, comme pour un tournoi (et si tu as marqué des Jouteurs, seuls eux concourent). Il faut la lice (fanions A et B), le poteau de mêlée, le pas de tir et sa butte, tous sur cette carte.</RimJoust.GrandStartDesc>
+	<RimJoust.GrandMissing>Il manque pour le grand tournoi : {0}.</RimJoust.GrandMissing>
+	<RimJoust.GrandNeedLists>la lice (fanions A et B)</RimJoust.GrandNeedLists>
+	<RimJoust.GrandNeedMelee>le poteau de mêlée</RimJoust.GrandNeedMelee>
+	<RimJoust.GrandNeedArchery>le pas de tir et sa butte</RimJoust.GrandNeedArchery>
+	<RimJoust.GrandStarted>Le grand tournoi commence : {0} chevaliers, trois épreuves. Que les chroniqueurs taillent leurs plumes.</RimJoust.GrandStarted>
+	<RimJoust.GrandJoustEventWon>{0} remporte l'épreuve de joute !</RimJoust.GrandJoustEventWon>
+	<RimJoust.GrandNextArchery>L'épreuve de joute est terminée. Prochaine épreuve : le tir à l'arc. Les concurrents reprennent leur souffle.</RimJoust.GrandNextArchery>
+	<RimJoust.GrandNextMelee>Dernière épreuve : la mêlée générale. Que les masses parlent.</RimJoust.GrandNextMelee>
+	<RimJoust.GrandSkipArchery>Pas assez de concurrents debout ou pas de tir indisponible : l'épreuve de tir est sautée.</RimJoust.GrandSkipArchery>
+	<RimJoust.GrandSkipMelee>Pas assez de concurrents debout : la mêlée est sautée.</RimJoust.GrandSkipMelee>
+	<RimJoust.GrandChampionLetterLabel>Grand champion</RimJoust.GrandChampionLetterLabel>
+	<RimJoust.GrandChampionLetterText>{0} remporte le Grand Tournoi ! Trois épreuves, des points, des bleus, et un seul nom que tout le monde retiendra.</RimJoust.GrandChampionLetterText>
+	<RimJoust.GrandStandingsHeader>Classement général :</RimJoust.GrandStandingsHeader>
+	<RimJoust.GrandCancelLabel>Annuler le grand tournoi</RimJoust.GrandCancelLabel>
+	<RimJoust.GrandCancelDesc>Annule le grand tournoi et l'épreuve en cours. Tout le monde est libéré et récupère ses affaires.</RimJoust.GrandCancelDesc>
+	<RimJoust.GrandCancelConfirm>Annuler le grand tournoi en cours ?</RimJoust.GrandCancelConfirm>
+	<RimJoust.GrandCancelled>Le grand tournoi est annulé.</RimJoust.GrandCancelled>
+	<RimJoust.HallGrandTag>Grand Tournoi</RimJoust.HallGrandTag>
+
+	<!-- Récapitulatif de la lettre du champion -->
+	<RimJoust.RecapTitle>Le déroulé du tournoi :</RimJoust.RecapTitle>
+	<RimJoust.RecapRound>Manche {0}</RimJoust.RecapRound>
+	<RimJoust.RecapFinal>Finale</RimJoust.RecapFinal>
+	<RimJoust.RecapBout>{0} a désarçonné {1}</RimJoust.RecapBout>
+	<RimJoust.RecapBye>{0} est passé sans combattre</RimJoust.RecapBye>
+
+	<!-- Arbre d'élimination -->
+	<RimJoust.BracketBye>(exempt)</RimJoust.BracketBye>
+	<RimJoust.BracketEmpty>Aucun duel pour l'instant.</RimJoust.BracketEmpty>
+	<RimJoust.LegendAdvanced>Qualifié</RimJoust.LegendAdvanced>
+	<RimJoust.LegendLive>En cours</RimJoust.LegendLive>
+	<RimJoust.LegendEliminated>Éliminé / mort</RimJoust.LegendEliminated>
+	<RimJoust.LocateTip>Cliquer pour localiser ce chevalier.</RimJoust.LocateTip>
+
+	<!-- Écran de résultats -->
+	<RimJoust.ResultsChampion>Champion du tournoi</RimJoust.ResultsChampion>
+	<RimJoust.ResultsQueen>Reine d'amour et de beauté : {0}</RimJoust.ResultsQueen>
+
+	<!-- Journal d'événements -->
+	<RimJoust.JournalEmpty>Aucun événement pour l'instant.</RimJoust.JournalEmpty>
+	<RimJoust.LogTournamentStart>Le tournoi commence : {0} chevaliers engagés.</RimJoust.LogTournamentStart>
+	<RimJoust.LogBoutStart>Tour {0} : {1} affronte {2}.</RimJoust.LogBoutStart>
+	<RimJoust.LogBoutResult>Tour {0} : {1} a désarçonné {2}.</RimJoust.LogBoutResult>
+	<RimJoust.LogBye>{0} est exempté ce tour (pas d'adversaire).</RimJoust.LogBye>
+	<RimJoust.LogNewRound>Tour {0} : {1} jouteurs encore en lice.</RimJoust.LogNewRound>
+	<RimJoust.LogChampion>{0} remporte le tournoi !</RimJoust.LogChampion>
+	<RimJoust.LogQueen>{0} couronne {1} reine d'amour et de beauté.</RimJoust.LogQueen>
+	<RimJoust.LogForfeit>Tour {0} : {1} l'emporte, {2} a déclaré forfait.</RimJoust.LogForfeit>
+
+	<!-- Écuyer -->
+	<RimJoust.SquireToggleLabel>Écuyer de tournoi</RimJoust.SquireToggleLabel>
+	<RimJoust.SquireToggleDesc>Fait de ce colon un écuyer. Pendant un tournoi, les écuyers vont récupérer les chevaliers tombés et les ramènent à l'aire de récupération. Comme ça la lice est dégagée pour le duel d'après.</RimJoust.SquireToggleDesc>
+	<RimJoust.JousterToggleLabel>Jouteur de tournoi</RimJoust.JousterToggleLabel>
+	<RimJoust.JousterToggleDesc>Marque ce colon comme jouteur. Quand tu lances un tournoi, seuls les colons marqués (et à cheval) participent. Si tu ne marques personne, tous tes colons à cheval joutent par défaut. La lance leur est donnée automatiquement, pas besoin d'en fabriquer.</RimJoust.JousterToggleDesc>
+
+	<!-- Paris -->
+	<RimJoust.BetHeader>Paris</RimJoust.BetHeader>
+	<RimJoust.BetSilver>Argent : {0}</RimJoust.BetSilver>
+	<RimJoust.BetWaiting>En attente du prochain duel...</RimJoust.BetWaiting>
+	<RimJoust.BetActive>Pari : {0} sur {1} (x{2})</RimJoust.BetActive>
+	<RimJoust.BetPlaced>Pari placé : {0} sur {1} (x{2}).</RimJoust.BetPlaced>
+	<RimJoust.BetWon>Pari gagné ! {0} l'emporte, tu rafles {1} argent.</RimJoust.BetWon>
+	<RimJoust.BetLost>Pari perdu. {0} argent envolés.</RimJoust.BetLost>
+	<RimJoust.BetAlready>T'as déjà un pari en cours.</RimJoust.BetAlready>
+	<RimJoust.BetNoBout>Aucun duel en cours.</RimJoust.BetNoBout>
+	<RimJoust.BetNoGuest>Pas de chevalier invité dans ce duel, rien à parier.</RimJoust.BetNoGuest>
+	<RimJoust.BetClosed>Trop tard, la charge est lancée. Paris fermés.</RimJoust.BetClosed>
+	<RimJoust.BetNeedSilver>Pas assez d'argent (il en faut {0}).</RimJoust.BetNeedSilver>
+
+	<!-- Guide -->
+	<RimJoust.GuideGizmoLabel>Guide</RimJoust.GuideGizmoLabel>
+	<RimJoust.GuideGizmoDesc>Ouvre le guide du tournoi : comment monter la lice, lancer un tournoi, les rôles, les paris et le sacre.</RimJoust.GuideGizmoDesc>
+	<RimJoust.RoleGizmosLabel>Boutons de rôle sur les colons</RimJoust.RoleGizmosLabel>
+	<RimJoust.RoleGizmosDesc>Affiche ou masque les boutons Jouteur, Écuyer et Inscrire sur les pions. Coupe-les si tu ne veux pas ces boutons en permanence sur tous tes colons entre deux tournois. Réactive-les quand tu prépares un tournoi.</RimJoust.RoleGizmosDesc>
+	<RimJoust.GuestArrivalsLabel>Chevaliers de passage</RimJoust.GuestArrivalsLabel>
+	<RimJoust.GuestArrivalsDesc>Autorise les chevaliers étrangers (champion solo et délégations de maisons) à venir défier ta colonie. Ils n'arrivent que si tu as posé une lice. Coupe-le si tu ne veux pas de visiteurs à jouter.</RimJoust.GuestArrivalsDesc>
+	<RimJoust.Settings.OpenGuide>Ouvrir le guide du tournoi</RimJoust.Settings.OpenGuide>
+	<RimJoust.Guide.Title>Guide du tournoi</RimJoust.Guide.Title>
+
+	<RimJoust.Guide.ListsTitle>Monter la lice</RimJoust.Guide.ListsTitle>
+	<RimJoust.Guide.ListsBody>Une joute se court dans une lice : un couloir droit entre deux fanions.\n\n- Pose un fanion A et un fanion B (Architecte → Divers) aux deux bouts, sur la même carte. Prends des couleurs bien différentes pour pas t'y perdre.\n- Entre les deux, une barrière de lice aide les chevaux à charger droit.\n- Tu peux ajouter une aire de récupération et un point des défunts : les écuyers s'en servent pour dégager les tombés.\n\nUne fois la lice tracée, tu n'y touches plus. Sur un fanion, le bouton « Masquer le repère » cache le marqueur pour des captures propres, sans rien casser.</RimJoust.Guide.ListsBody>
+
+	<RimJoust.Guide.RolesTitle>Les rôles : jouteur et écuyer</RimJoust.Guide.RolesTitle>
+	<RimJoust.Guide.RolesBody>Sélectionne un colon pour voir ses boutons de rôle.\n\nJouteur : tu choisis qui participe au tournoi. Si tu ne marques personne, tous tes colons à cheval joutent par défaut. Pratique pour ne faire concourir que tes meilleurs.\n\nÉcuyer : pendant le tournoi, il va ramasser les chevaliers tombés et les porte à l'aire de récupération, pour dégager la lice entre deux duels. Il lui faut une aire de récupération posée pour savoir où les emmener.</RimJoust.Guide.RolesBody>
+
+	<RimJoust.Guide.StartTitle>Lancer un tournoi</RimJoust.Guide.StartTitle>
+	<RimJoust.Guide.StartBody>1. Mets tes jouteurs à cheval (Giddy-Up). N'importe quelle monture fait l'affaire.\n2. Si tu veux, inscris des visiteurs d'autres factions comme chevaliers invités.\n3. Clique sur un fanion et choisis « Organiser le tournoi ».\n\nLa lance de joute est donnée automatiquement au départ et reprise à la fin : rien à fabriquer. Il faut au moins deux jouteurs prêts pour démarrer.</RimJoust.Guide.StartBody>
+
+	<RimJoust.Guide.DuringTitle>Pendant le tournoi</RimJoust.Guide.DuringTitle>
+	<RimJoust.Guide.DuringBody>Les chevaliers s'affrontent en élimination directe. À chaque passe, un coup de lance peut désarçonner l'adversaire : l'armure, le bouclier, l'adresse du jouteur (un mélange de Melee pour la frappe et d'Animaux pour la maîtrise de la monture) et les traits jouent tous un rôle.\n\nOuvre le tableau du tournoi pour suivre le duel en cours, l'arbre et le journal. S'il y a un chevalier invité dans un duel, tu peux miser de l'argent dessus.\n\nÇa reste dangereux : un coup peut blesser gravement, voire tuer.</RimJoust.Guide.DuringBody>
+
+	<RimJoust.Guide.AfterTitle>Champion et reine</RimJoust.Guide.AfterTitle>
+	<RimJoust.Guide.AfterBody>Le dernier en selle est sacré champion. Il désigne alors une reine d'amour et de beauté et lui dépose une couronne de fleurs.\n\nLe plus souvent il couronne celle qu'il aime. Mais s'il en admire une autre bien plus fort, ça peut tourner au scandale, et la délaissée n'oubliera pas de sitôt. Une fenêtre te raconte qui est couronnée et pourquoi.</RimJoust.Guide.AfterBody>
+
+	<RimJoust.Guide.MeleeTitle>La mêlée générale</RimJoust.Guide.MeleeTitle>
+	<RimJoust.Guide.MeleeBody>Une seule règle : dernier debout.\n\n- Pose le poteau de mêlée (Architecte → Divers) au centre d'un terrain dégagé, idéalement entouré de rambardes avec une porte.\n- Sélectionne le poteau : le contour blanc montre la limite de l'arène. Le bouton « Arène : auto » la cale sur ton enceinte, les boutons + et - règlent un cercle à la main. Les combattants qui sortent sont ramenés au centre.\n- Clique « Lancer la mêlée » : les colons marqués Jouteur descendent de cheval, reçoivent une masse de tournoi émoussée (leur arme revient après), se mettent en cercle, et au son du cor tout le monde tape sur tout le monde.\n\nÀ terre = éliminé, pas mort : les masses font des bleus, pas des trous. Le slider « Dégâts en mêlée » dans les options règle la brutalité, et le public s'installe autour de l'arène tout seul.</RimJoust.Guide.MeleeBody>
+
+	<RimJoust.Guide.ArcheryTitle>Le concours de tir</RimJoust.Guide.ArcheryTitle>
+	<RimJoust.Guide.ArcheryBody>- Pose le fanion de pas de tir, et la butte de tir à 10-20 cases en face, avec une ligne dégagée entre les deux. Rien de précieux ni de vivant derrière la butte : les flèches perdues ne préviennent pas.\n- Clique le fanion : les colons marqués Jouteur s'alignent, chacun reçoit un arc recourbé de prêt (équité oblige, on teste le tireur, pas l'arsenal), et tirent trois volées sur la butte.\n\nChaque touche compte, avec le nom du tireur affiché au-dessus de la cible. Le plus de touches gagne, la compétence Tir départage. Les yeux au beurre noir et les bras en écharpe se paient cash sur la précision. Le public regarde sagement derrière la ligne, jamais dans l'axe.</RimJoust.Guide.ArcheryBody>
+
+	<RimJoust.Guide.GrandTitle>Le Grand Tournoi</RimJoust.Guide.GrandTitle>
+	<RimJoust.Guide.GrandBody>Trois épreuves à la suite, comme dans les chroniques : la joute, le tir à l'arc, puis la mêlée générale.\n\n- Il faut tout l'équipement sur la même carte : la lice (fanions A et B), le poteau de mêlée, le pas de tir et sa butte.\n- Mets tes chevaliers à cheval et clique « Organiser un GRAND tournoi » sur un fanion de lice. Les colons montés participent, comme pour un tournoi simple.\n\nChaque épreuve rapporte des points selon le classement. Les blessés continuent tant qu'ils tiennent debout ; ceux au tapis sautent l'épreuve. À la fin, le cumul désigne le grand champion : lettre avec le classement général, honneurs, reine d'amour et de beauté, et une entrée « Grand Tournoi » au palmarès du tableau.</RimJoust.Guide.GrandBody>
+
+	<RimJoust.Guide.SafetyTitle>Réglages et dangerosité</RimJoust.Guide.SafetyTitle>
+	<RimJoust.Guide.SafetyBody>Dans les options du mod tu règles les dégâts de lance, la chance de désarçonnement, le risque de coup dangereux, les dégâts de chute, les dégâts de mêlée et le délai entre deux tournois.\n\nLes effets des traits (bagarreur, coriace, agile, mauviette, sanguinaire, psychopathe...) peuvent s'activer ou se couper.\n\nLa joute n'utilise pas de compétence à part : elle s'appuie sur ton Melee (la frappe à la lance) et tes Animaux (la maîtrise de la monture). La mêlée, c'est du pur Melee, et le concours d'arc du pur Tir. Pour faire de meilleurs champions, entraîne tout ça, au quintain ou en tournoi.</RimJoust.Guide.SafetyBody>
+
+	<!-- Quintain -->
+	<RimJoust.TrainQuintain>S'entraîner au quintain</RimJoust.TrainQuintain>
+	<RimJoust.TrainQuintainNeedMount>S'entraîner au quintain (il faut être à cheval)</RimJoust.TrainQuintainNeedMount>
+	<RimJoust.QuintainUnhorsed>{0} se prend le sac de plein fouet et tombe de cheval !</RimJoust.QuintainUnhorsed>
+
+</LanguageData>

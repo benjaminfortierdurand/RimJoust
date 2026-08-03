@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RimJoust_JoustingLance.label>lance de joute</RimJoust_JoustingLance.label>
+	<RimJoust_JoustingLance.tools.0.label>manche</RimJoust_JoustingLance.tools.0.label>
+	<RimJoust_JoustingLance.tools.1.label>coronal</RimJoust_JoustingLance.tools.1.label>
+	<RimJoust_JoustingLance.description>Longue lance de tournoi avec un embout coronal émoussé au bout. Faite pour désarçonner l'adversaire, pas pour le tuer. Quand un chevalier tombe de cheval, sa lance se brise dans la chute.</RimJoust_JoustingLance.description>
+
+	<RimJoust_SpotA.label>fanion de joute A</RimJoust_SpotA.label>
+	<RimJoust_SpotA.description>Le point de départ A d'une joute. Mets-le à un bout de la lice, et pose le fanion B à l'autre bout sur la même carte. La couleur vient du matériau utilisé (tissu ou métal). Prends une couleur bien différente du fanion B, genre rouge, sinon tu vas t'y perdre.</RimJoust_SpotA.description>
+
+	<RimJoust_SpotB.label>fanion de joute B</RimJoust_SpotB.label>
+	<RimJoust_SpotB.description>Le point de départ B d'une joute. Mets-le à l'autre bout de la lice, en face du fanion A, sur la même carte. La couleur vient du matériau utilisé (tissu ou métal). Prends quelque chose comme du bleu pour pas le confondre avec le fanion A.</RimJoust_SpotB.description>
+
+	<RimJoust_TourneyMace.label>masse de tournoi</RimJoust_TourneyMace.label>
+	<RimJoust_TourneyMace.tools.0.label>manche</RimJoust_TourneyMace.tools.0.label>
+	<RimJoust_TourneyMace.tools.1.label>tête</RimJoust_TourneyMace.tools.1.label>
+	<RimJoust_TourneyMace.description>Une masse de mêlée générale au bout arrondi, faite pour assommer et désarmer plutôt que tuer. Distribuée à tous les combattants au début d'une mêlée, et récupérée à la fin. Personne ne veut vraiment savoir ce qui arriverait avec de vraies épées.</RimJoust_TourneyMace.description>
+
+	<RimJoust_MeleeSpot.label>poteau de mêlée</RimJoust_MeleeSpot.label>
+	<RimJoust_MeleeSpot.description>Le poteau trophée qui marque le centre du terrain de mêlée générale : un bouclier cerclé de fer et deux haches croisées, pour que personne ne se demande ce qui se passe ici. Sélectionne le poteau pour voir la limite de l'arène : le bouton auto la cale sur ton enceinte (rambardes, murs, portes), les boutons + et - règlent un cercle à la main. Les combattants qui sortent de la limite sont ramenés au centre.</RimJoust_MeleeSpot.description>
+
+	<RimJoust_ArcherySpot.label>fanion de pas de tir</RimJoust_ArcherySpot.label>
+	<RimJoust_ArcherySpot.description>Le pas de tir du concours d'archerie. Les archers s'alignent ici, face à la butte de tir. Pose la butte à 10-20 cases, avec une ligne de tir dégagée entre les deux, et rien de précieux ni de vivant derrière : les flèches perdues ne préviennent pas. La couleur vient du matériau utilisé.</RimJoust_ArcherySpot.description>
+
+	<RimJoust_ArcheryTarget.label>butte de tir</RimJoust_ArcheryTarget.label>
+	<RimJoust_ArcheryTarget.description>Une butte de paille avec une cible peinte, pour les concours d'archerie. Pendant un concours, elle encaisse les flèches sans broncher et chaque touche est comptée. En dehors, c'est juste de la paille qui n'a rien demandé à personne.</RimJoust_ArcheryTarget.description>
+
+	<RimJoust_LiceBarrier.label>lice de joute</RimJoust_LiceBarrier.label>
+	<RimJoust_LiceBarrier.description>La barrière au milieu de la piste de joute. Une clôture en bois renforcée, à peu près à hauteur de jambe quand t'es à cheval. Elle sépare les deux pistes pour que les chevaux se rentrent pas dedans. Pose une rangée bien droite entre les deux fanions. Ça se relie tout seul aux autres clôtures.</RimJoust_LiceBarrier.description>
+
+	<RimJoust_RecoverySpot.label>aire de récupération</RimJoust_RecoverySpot.label>
+	<RimJoust_RecoverySpot.description>Où les écuyers emmènent les chevaliers désarçonnés pour qu'ils se remettent loin de la lice. Pose des lits autour, des lits médicaux c'est mieux, et l'écuyer ira y allonger le chevalier tombé pour qu'on le soigne. S'il n'y a pas de lit dans le coin, il le laisse au sol à côté du marqueur.</RimJoust_RecoverySpot.description>
+
+	<RimJoust_SquirePost.label>poste d'écuyer</RimJoust_SquirePost.label>
+	<RimJoust_SquirePost.description>Là où se tient un écuyer. Les colons que tu désignes écuyers attendent ici, prêts à ramasser les chevaliers tombés et à les porter vers l'aire de récupération. À poser près de la lice.</RimJoust_SquirePost.description>
+
+	<RimJoust_HorseSpot.label>point des chevaux</RimJoust_HorseSpot.label>
+	<RimJoust_HorseSpot.description>Où les écuyers amènent les chevaux dont le cavalier s'est fait désarçonner, pour les attacher le temps du tournoi. Si tu veux, entoure-le de barrières avec un portail pour faire un vrai enclos. À la fin du tournoi les chevaux sont relâchés et retournent à leur enclos habituel.</RimJoust_HorseSpot.description>
+
+	<RimJoust_KnightPost.label>poste de chevalier</RimJoust_KnightPost.label>
+	<RimJoust_KnightPost.description>Un point au sol où un chevalier attend son tour. Pendant le tournoi ils viennent se mettre là, près de la lice, avant d'aller jouter. Pose-en un par participant. Si t'en mets pas, ils se placent tout seuls.</RimJoust_KnightPost.description>
+
+	<RimJoust_DeadSpot.label>point des défunts</RimJoust_DeadSpot.label>
+	<RimJoust_DeadSpot.description>Où les écuyers emmènent les chevaliers tués pendant le tournoi, pour pas les laisser traîner sur la lice. Mets des lits autour et l'écuyer ira y allonger le corps s'il y a de la place, sinon il le pose par terre à côté. Si t'en poses pas, les corps sont juste dégagés de la lice.</RimJoust_DeadSpot.description>
+
+</LanguageData>

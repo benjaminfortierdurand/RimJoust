@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+		<defName>RimJoust_JoustPass</defName>
+		<driverClass>RimJoust.Jobs.JobDriver_JoustPass</driverClass>
+		<reportString>jousting.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+		<alwaysShowWeapon>true</alwaysShowWeapon>
+		<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
+		<modExtensions>
+			<li Class="GiddyUp.CanDoMounted">
+				<checkTargets>false</checkTargets>
+			</li>
+		</modExtensions>
+	</JobDef>
+
+	<JobDef>
+		<defName>RimJoust_CarryToRecovery</defName>
+		<driverClass>RimJoust.Jobs.JobDriver_CarryToRecovery</driverClass>
+		<reportString>carrying TargetA to the recovery area.</reportString>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+	</JobDef>
+
+	<JobDef>
+		<defName>RimJoust_WatchJoust</defName>
+		<driverClass>RimJoust.Jobs.JobDriver_WatchJoust</driverClass>
+		<reportString>watching the joust.</reportString>
+		<joyKind>Social</joyKind>
+		<joyGainRate>1</joyGainRate>
+		<casualInterruptible>false</casualInterruptible>
+		<suspendable>false</suspendable>
+	</JobDef>
+
+</Defs>

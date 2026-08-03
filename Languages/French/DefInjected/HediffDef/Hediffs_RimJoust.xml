@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RimJoust_HardFall.label>chute brutale</RimJoust_HardFall.label>
+	<RimJoust_HardFall.labelNoun>une chute brutale</RimJoust_HardFall.labelNoun>
+	<RimJoust_HardFall.description>S'est pris une grosse chute du haut d'un cheval au galop. Il reste au sol assommé un moment, le temps qu'on vienne le ramasser, puis il se relève sonné et titubant, et traîne des courbatures pendant quelques heures. L'armure fait son travail : c'est spectaculaire, rarement grave.</RimJoust_HardFall.description>
+	<RimJoust_HardFall.stages.0.label>courbaturé</RimJoust_HardFall.stages.0.label>
+	<RimJoust_HardFall.stages.1.label>sonné</RimJoust_HardFall.stages.1.label>
+	<RimJoust_HardFall.stages.2.label>au sol</RimJoust_HardFall.stages.2.label>
+
+	<RimJoust_ChampionRenown.label>renommée de champion</RimJoust_ChampionRenown.label>
+	<RimJoust_ChampionRenown.labelNoun>une renommée de champion</RimJoust_ChampionRenown.labelNoun>
+	<RimJoust_ChampionRenown.description>Ce chevalier a gagné le tournoi de joute et tout le monde le sait. Du coup on l'écoute mieux et il en impose. Ça dure un moment, puis ça retombe.</RimJoust_ChampionRenown.description>
+
+	<RimJoust_TourneyMount.label>monture de tournoi</RimJoust_TourneyMount.label>
+	<RimJoust_TourneyMount.description>Ce cheval a été préparé pour la joute. Il charge à fond pendant la passe.</RimJoust_TourneyMount.description>
+
+</LanguageData>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RimJoust_Quintain</defName>
+		<label>quintain</label>
+		<description>A training dummy for jousting. A post with a spinning arm, a shield on one side and a sandbag on the other. Your colonists train on it with a lance and improve at jousting (their Melee and Animals), without the risk of a real tournament. To train, select a colonist and right-click the quintain.</description>
+		<thingClass>RimJoust.Buildings.Building_Quintain</thingClass>
+		<drawerType>RealtimeOnly</drawerType>
+		<tickerType>Normal</tickerType>
+		<category>Building</category>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<fillPercent>0.35</fillPercent>
+		<rotatable>false</rotatable>
+		<size>(1,2)</size>
+		<graphicData>
+			<texPath>Things/Building/RimJoust_Quintain</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.4,1.4)</drawSize>
+		</graphicData>
+		<uiIconPath>UI/RimJoust_Quintain_Icon</uiIconPath>
+		<statBases>
+			<MaxHitPoints>180</MaxHitPoints>
+			<WorkToBuild>1600</WorkToBuild>
+			<Flammability>1.0</Flammability>
+			<Beauty>2</Beauty>
+		</statBases>
+		<costList>
+			<WoodLog>80</WoodLog>
+			<Steel>25</Steel>
+		</costList>
+		<designationCategory>Misc</designationCategory>
+		<constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+	</ThingDef>
+
+</Defs>

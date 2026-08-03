@@ -1,0 +1,72 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net48</TargetFramework>
+		<AssemblyName>RimJoust</AssemblyName>
+		<RootNamespace>RimJoust</RootNamespace>
+		<LangVersion>latest</LangVersion>
+		<Nullable>disable</Nullable>
+
+		<!-- Sortie directement dans 1.6/Assemblies/ pour que RimWorld le charge -->
+		<OutputPath>..\1.6\Assemblies\</OutputPath>
+		<AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
+		<AppendRuntimeIdentifierToOutputPath>false</AppendRuntimeIdentifierToOutputPath>
+		<CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<DebugType>none</DebugType>
+		<DebugSymbols>false</DebugSymbols>
+	</PropertyGroup>
+
+	<!-- Chemins des DLLs de référence. Édite si ton install est ailleurs. -->
+	<PropertyGroup>
+		<RimWorldManagedDir>D:\Steam\steamapps\common\RimWorld\RimWorldWin64_Data\Managed</RimWorldManagedDir>
+		<HarmonyDir>D:\Steam\steamapps\workshop\content\294100\2009463077\Current\Assemblies</HarmonyDir>
+		<GiddyUpDir>D:\Steam\steamapps\workshop\content\294100\3674332861\1.6\Assemblies</GiddyUpDir>
+	</PropertyGroup>
+
+	<!--
+		Krafs.Publicizer : à la compilation, génère une copie "publicizée" de la DLL référencée
+		où tous les membres internal/private deviennent accessibles comme s'ils étaient public.
+		Au runtime, c'est la DLL originale qui est chargée — donc pas d'incompatibilité.
+		C'est le pattern standard du modding RimWorld pour accéder aux internals de mods tiers.
+	-->
+	<ItemGroup>
+		<PackageReference Include="Krafs.Publicizer" Version="2.2.1">
+			<PrivateAssets>all</PrivateAssets>
+		</PackageReference>
+		<Publicize Include="GiddyUpCore" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<!-- RimWorld + Unity -->
+		<Reference Include="Assembly-CSharp">
+			<HintPath>$(RimWorldManagedDir)\Assembly-CSharp.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.CoreModule">
+			<HintPath>$(RimWorldManagedDir)\UnityEngine.CoreModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.IMGUIModule">
+			<HintPath>$(RimWorldManagedDir)\UnityEngine.IMGUIModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+		<Reference Include="UnityEngine.TextRenderingModule">
+			<HintPath>$(RimWorldManagedDir)\UnityEngine.TextRenderingModule.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<!-- Harmony -->
+		<Reference Include="0Harmony">
+			<HintPath>$(HarmonyDir)\0Harmony.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+
+		<!-- Giddy-Up 2 Continued (publicisée par Krafs.Publicizer ci-dessus) -->
+		<Reference Include="GiddyUpCore">
+			<HintPath>$(GiddyUpDir)\GiddyUpCore.dll</HintPath>
+			<Private>false</Private>
+		</Reference>
+	</ItemGroup>
+
+</Project>

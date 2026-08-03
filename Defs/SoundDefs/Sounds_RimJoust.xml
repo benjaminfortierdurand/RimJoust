@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<SoundDef>
+		<defName>RimJoust_JoustHorn</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>trumpet</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>55</min>
+					<max>55</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.0</min>
+					<max>1.0</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+	<SoundDef>
+		<defName>RimJoust_VictoryFanfare</defName>
+		<context>MapOnly</context>
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>trumpet_victory</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+					<min>60</min>
+					<max>60</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1.0</min>
+					<max>1.0</max>
+				</pitchRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+
+</Defs>

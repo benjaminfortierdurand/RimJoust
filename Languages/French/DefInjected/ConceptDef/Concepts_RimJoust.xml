@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<RimJoust_Concept_Lists.label>organiser un tournoi</RimJoust_Concept_Lists.label>
+	<RimJoust_Concept_Lists.helpText>Tu as posé un fanion de joute. Pose l'autre fanion à l'autre bout pour tracer la lice, mets quelques colons à cheval, puis clique sur un fanion et choisis « Organiser le tournoi ». La lance est donnée automatiquement, rien à fabriquer.</RimJoust_Concept_Lists.helpText>
+
+	<RimJoust_Concept_Jouster.label>rôle de jouteur</RimJoust_Concept_Jouster.label>
+	<RimJoust_Concept_Jouster.helpText>Avec ce bouton, tu choisis quels colons participent au tournoi. Si tu ne marques personne, tous tes colons à cheval joutent par défaut. Pratique pour ne faire concourir que tes meilleurs et garder les autres au travail.</RimJoust_Concept_Jouster.helpText>
+
+	<RimJoust_Concept_Squire.label>rôle d'écuyer</RimJoust_Concept_Squire.label>
+	<RimJoust_Concept_Squire.helpText>Marque un colon comme écuyer et il ira ramasser les chevaliers tombés pour dégager la lice entre deux duels. Il te faut une aire de récupération posée pour qu'ils sachent où emmener les blessés.</RimJoust_Concept_Squire.helpText>
+
+	<RimJoust_Concept_Guests.label>inviter des chevaliers</RimJoust_Concept_Guests.label>
+	<RimJoust_Concept_Guests.helpText>Les visiteurs des autres factions peuvent jouter eux aussi. Sélectionne un visiteur et inscris-le : on lui prête une lance et une monture le temps du tournoi. Bon moyen de remplir le tableau quand tu manques de colons.</RimJoust_Concept_Guests.helpText>
+
+	<RimJoust_Concept_Bets.label>parier sur les duels</RimJoust_Concept_Bets.label>
+	<RimJoust_Concept_Bets.helpText>Quand un chevalier invité court un duel, ouvre le tableau du tournoi pour miser de l'argent dessus. À toi de flairer qui va rester en selle.</RimJoust_Concept_Bets.helpText>
+
+</LanguageData>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="RimJoust_SpotBase">
+		<defName>RimJoust_ArcherySpot</defName>
+		<label>archery line flag</label>
+		<description>The shooting line for archery contests. Archers line up here, facing the archery butt. Place the butt 10 to 20 cells away with a clear lane between them, and nothing precious or alive behind it: stray arrows do not ask first. The flag takes the colour of the material you use.</description>
+		<graphicData>
+			<texPath>Things/Building/RimJoust_Flag</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1,1)</drawSize>
+		</graphicData>
+	</ThingDef>
+
+	<ThingDef ParentName="BuildingBase">
+		<defName>RimJoust_ArcheryTarget</defName>
+		<label>archery butt</label>
+		<description>A straw butt with a painted target, for archery contests. During a contest it soaks up arrows without complaint and every hit is counted. Outside of one, it is just straw that never asked for any of this.</description>
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		<graphicData>
+			<texPath>Things/Building/RimJoust_ArcheryTarget</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<drawSize>(1.15,1.15)</drawSize>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<fillPercent>0.8</fillPercent>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		<castEdgeShadows>false</castEdgeShadows>
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+			<WorkToBuild>800</WorkToBuild>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<costList>
+			<WoodLog>30</WoodLog>
+		</costList>
+		<designationCategory>Misc</designationCategory>
+		<constructionSkillPrerequisite>0</constructionSkillPrerequisite>
+		<size>(1,1)</size>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+	</ThingDef>
+
+</Defs>
