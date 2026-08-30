@@ -32,6 +32,7 @@
 	<RimJoust.TournamentCooldown>Pas si vite, on vient d'en faire un. Prochain tournoi possible dans {0} jours.</RimJoust.TournamentCooldown>
 	<RimJoust.TournamentCooldownGizmo>Prochain tournoi dans {0} jours.</RimJoust.TournamentCooldownGizmo>
 	<RimJoust.TournamentNeedTwo>Il faut au moins 2 chevaliers pour un tournoi.</RimJoust.TournamentNeedTwo>
+	<RimJoust.MountedFromOwnership>{0} chevalier(s) se sont mis en selle sur leur propre monture pour le tournoi.</RimJoust.MountedFromOwnership>
 	<RimJoust.NotEnoughKnights>Pas assez de chevaliers prêts. Il en faut au moins 2 à cheval (prêts pour l'instant : {0}). Mets d'autres colons en selle, ou inscris des visiteurs. La lance leur est donnée automatiquement.</RimJoust.NotEnoughKnights>
 	<RimJoust.TournamentStarted>Le tournoi commence ! {0} chevaliers s'affrontent pour la gloire.</RimJoust.TournamentStarted>
 	<RimJoust.TournamentBoutWon>{0} désarçonne {1} et se qualifie pour le tour suivant !</RimJoust.TournamentBoutWon>
@@ -81,8 +82,9 @@
 	<RimJoust.RecoverIn>Récupère dans ~{0} h de jeu</RimJoust.RecoverIn>
 
 	<!-- Marqueurs de joute -->
-	<RimJoust.HideSpotLabel>Masquer le repère</RimJoust.HideSpotLabel>
-	<RimJoust.HideSpotDesc>Cache ce marqueur. Le fanion ou le poste est toujours là et marche pareil, c'est juste qu'on le voit plus. Pratique une fois ta lice montée, ou pour faire des captures d'écran propres. Sélectionne plusieurs marqueurs d'un coup pour tous les cacher en même temps.</RimJoust.HideSpotDesc>
+	<RimJoust.ShowSpotLabel>Afficher le repère</RimJoust.ShowSpotLabel>
+	<RimJoust.ShowSpotDesc>Affiche ou cache ce marqueur. Le fanion ou le poste est toujours là et marche pareil, c'est juste qu'on le voit plus. Pratique une fois ta lice montée, ou pour faire des captures d'écran propres. Sélectionne plusieurs marqueurs d'un coup pour tous les basculer en même temps.</RimJoust.ShowSpotDesc>
+	<RimJoust.MarkerHidden>Repère masqué.</RimJoust.MarkerHidden>
 
 	<!-- Chevaliers invités -->
 	<RimJoust.EnrollGuestLabel>Inscrire au tournoi</RimJoust.EnrollGuestLabel>
@@ -132,6 +134,7 @@
 	<RimJoust.MeleeStarted>La mêlée générale commence : {0} combattants entrent en lice !</RimJoust.MeleeStarted>
 	<RimJoust.MeleeFight>Chargez !</RimJoust.MeleeFight>
 	<RimJoust.MeleeEliminated>{0} est au tapis. {1} encore debout.</RimJoust.MeleeEliminated>
+	<RimJoust.MeleeFatigue>Les bras deviennent lourds. Les coups commencent à porter.</RimJoust.MeleeFatigue>
 	<RimJoust.MeleeWinner>{0} est le dernier debout et remporte la mêlée générale !</RimJoust.MeleeWinner>
 	<RimJoust.MeleeCancelled>La mêlée est annulée.</RimJoust.MeleeCancelled>
 

@@ -8,7 +8,7 @@ namespace RimJoust.Tournament
 {
 	public class GrandTournament : IExposable
 	{
-		private const int PauseTicks = 1800;
+		private const int PauseTicks = 3500;
 		private const int MaxTickFailures = 300;
 
 		private int _phase;
@@ -93,7 +93,7 @@ namespace RimJoust.Tournament
 				case 2:
 					_ticks++;
 					if (_ticks == 1 || _ticks % 250 == 0) MusterAtPosts();
-					if (_ticks < PauseTicks) return;
+					if (_ticks < PauseTicks || WaitingOnNeeds()) return;
 					StartArchery(tm);
 					return;
 
@@ -109,7 +109,7 @@ namespace RimJoust.Tournament
 				case 4:
 					_ticks++;
 					if (_ticks == 1 || _ticks % 250 == 0) MusterAtPosts();
-					if (_ticks < PauseTicks) return;
+					if (_ticks < PauseTicks || WaitingOnNeeds()) return;
 					StartMelee(tm);
 					return;
 
@@ -156,6 +156,25 @@ namespace RimJoust.Tournament
 		private Map MapOf()
 			=> _roster.FirstOrDefault(p => p?.MapHeld != null)?.MapHeld ?? Find.AnyPlayerHomeMap;
 
+		private const int MaxPauseTicks = 15000;
+
+		private bool WaitingOnNeeds()
+		{
+			if (_ticks >= MaxPauseTicks) return false;
+			foreach (var p in Eligible())
+				if (NeedsBreak(p)) return true;
+			return false;
+		}
+
+		private static bool NeedsBreak(Pawn p)
+		{
+			var food = p.needs?.food;
+			var rest = p.needs?.rest;
+			if (food != null && food.CurLevelPercentage < 0.32f) return true;
+			if (rest != null && rest.CurLevelPercentage < 0.22f) return true;
+			return false;
+		}
+
 		private void MusterAtPosts()
 		{
 			var map = MapOf();
@@ -169,6 +188,12 @@ namespace RimJoust.Tournament
 			{
 				var p = eligible[i];
 				if (p.jobs == null || p.Map != map) continue;
+
+				if (NeedsBreak(p))
+				{
+					if (p.drafter != null && p.Drafted) p.drafter.Drafted = false;
+					continue;
+				}
 
 				IntVec3 cell;
 				if (posts.Count > 0) cell = posts[i % posts.Count].Position;

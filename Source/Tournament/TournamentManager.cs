@@ -171,6 +171,19 @@ namespace RimJoust.Tournament
 			return null;
 		}
 
+		private void MountAssignedJousters(Map map, bool anyMarked)
+		{
+			if (!MountOwnershipBridge.Available) return;
+			var mounted = MountOwnershipBridge.MountAssignedRiders(map, p =>
+				!IsSquire(p)
+				&& !p.WorkTagIsDisabled(WorkTags.Violent)
+				&& (p.ageTracker == null || p.ageTracker.AgeBiologicalYears >= 16)
+				&& (!anyMarked || IsJouster(p)));
+			if (mounted > 0)
+				Messages.Message("RimJoust.MountedFromOwnership".Translate(mounted),
+					MessageTypeDefOf.NeutralEvent, historical: false);
+		}
+
 		public bool TryStartTournamentFromMap(Map map)
 		{
 			if (_active) { Reject("RimJoust.TournamentAlreadyRunning".Translate()); return false; }
@@ -186,6 +199,8 @@ namespace RimJoust.Tournament
 			var anyMarked = false;
 			foreach (var c in map.mapPawns.FreeColonistsSpawned)
 				if (IsJouster(c)) { anyMarked = true; break; }
+
+			MountAssignedJousters(map, anyMarked);
 
 			var roster = new List<Pawn>();
 			foreach (var c in map.mapPawns.FreeColonistsSpawned)
@@ -1005,6 +1020,8 @@ namespace RimJoust.Tournament
 			var anyMarked = false;
 			foreach (var c in map.mapPawns.FreeColonistsSpawned)
 				if (IsJouster(c)) { anyMarked = true; break; }
+
+			MountAssignedJousters(map, anyMarked);
 
 			var fighters = new List<Pawn>();
 			foreach (var c in map.mapPawns.FreeColonistsSpawned)

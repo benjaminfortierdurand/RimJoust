@@ -15,7 +15,8 @@ namespace RimJoust.Tournament
 		private const float RingRadius = 5.9f;
 		private const int CountdownTicks = 180;
 		private const int MaxTickFailures = 300;
-		private const int MaxFightTicks = 18000;
+		private const int MaxFightTicks = 9000;
+		private const int FatigueStartTicks = 2500;
 
 		private bool _active;
 		private int _phase;
@@ -34,6 +35,16 @@ namespace RimJoust.Tournament
 		public bool Active => _active;
 
 		public bool Covers(Pawn p) => _active && p != null && _allIds.Contains(p.thingIDNumber);
+
+		public float FatigueFactor
+		{
+			get
+			{
+				if (!_active || _phase != 2 || _ticks <= FatigueStartTicks) return 1f;
+				var over = (_ticks - FatigueStartTicks) / (float)FatigueStartTicks;
+				return Mathf.Min(3f, 1f + over * 0.5f);
+			}
+		}
 
 		public IReadOnlyList<Pawn> Fighters => _fighters;
 		public IReadOnlyList<Pawn> EliminationOrder => _eliminationOrder;
@@ -230,6 +241,10 @@ namespace RimJoust.Tournament
 				return;
 			}
 
+			if (_ticks == FatigueStartTicks)
+				Messages.Message("RimJoust.MeleeFatigue".Translate(),
+					new LookTargets(_fighters), MessageTypeDefOf.NeutralEvent, historical: false);
+
 			if (_ticks > MaxFightTicks)
 			{
 				Log.Warning("[RimJoust] la mêlée dure trop longtemps, on départage au plus vaillant.");
@@ -274,6 +289,9 @@ namespace RimJoust.Tournament
 
 		private void Retarget()
 		{
+			for (var i = 0; i < _loadouts.Count; i++)
+				GuestKnightUtility.EnsureLoanerWeapon(_loadouts[i]);
+
 			foreach (var p in _fighters)
 			{
 				if (p?.jobs == null) continue;

@@ -32,6 +32,7 @@
 	<RimJoust.TournamentCooldown>Not so fast, you just held one. Next tournament possible in {0} days.</RimJoust.TournamentCooldown>
 	<RimJoust.TournamentCooldownGizmo>Next tournament in {0} days.</RimJoust.TournamentCooldownGizmo>
 	<RimJoust.TournamentNeedTwo>A tournament needs at least 2 knights.</RimJoust.TournamentNeedTwo>
+	<RimJoust.MountedFromOwnership>{0} knight(s) got on their own horse for the tournament.</RimJoust.MountedFromOwnership>
 	<RimJoust.NotEnoughKnights>Not enough ready knights. You need at least 2 mounted colonists (ready right now: {0}). Mount more colonists, or enter some visitors. The lance is handed to them automatically.</RimJoust.NotEnoughKnights>
 	<RimJoust.TournamentStarted>The tournament begins! {0} knights compete for glory.</RimJoust.TournamentStarted>
 	<RimJoust.TournamentBoutWon>{0} unhorses {1} and advances to the next round!</RimJoust.TournamentBoutWon>
@@ -81,8 +82,9 @@
 	<RimJoust.RecoverIn>Recovers in ~{0} in-game h</RimJoust.RecoverIn>
 
 	<!-- Joust markers -->
-	<RimJoust.HideSpotLabel>Hide marker</RimJoust.HideSpotLabel>
-	<RimJoust.HideSpotDesc>Hides this marker's graphic. The flag or post is still there and still works, you just don't see it anymore. Useful once your lists are set up, or for screenshots. Select several markers to hide them all at once.</RimJoust.HideSpotDesc>
+	<RimJoust.ShowSpotLabel>Show marker</RimJoust.ShowSpotLabel>
+	<RimJoust.ShowSpotDesc>Shows or hides this marker's graphic. The flag or post is still there and still works either way, you just stop seeing it. Useful once your lists are set up, or for screenshots. Select several markers to switch them all at once.</RimJoust.ShowSpotDesc>
+	<RimJoust.MarkerHidden>Marker hidden.</RimJoust.MarkerHidden>
 
 	<!-- Guest knights -->
 	<RimJoust.EnrollGuestLabel>Enter in tournament</RimJoust.EnrollGuestLabel>
@@ -132,6 +134,7 @@
 	<RimJoust.MeleeStarted>The grand melee begins: {0} fighters take the field!</RimJoust.MeleeStarted>
 	<RimJoust.MeleeFight>Lay on!</RimJoust.MeleeFight>
 	<RimJoust.MeleeEliminated>{0} is down. {1} still standing.</RimJoust.MeleeEliminated>
+	<RimJoust.MeleeFatigue>Arms are getting heavy. The blows start to land harder.</RimJoust.MeleeFatigue>
 	<RimJoust.MeleeWinner>{0} is the last one standing and wins the grand melee!</RimJoust.MeleeWinner>
 	<RimJoust.MeleeCancelled>The melee is called off.</RimJoust.MeleeCancelled>
 

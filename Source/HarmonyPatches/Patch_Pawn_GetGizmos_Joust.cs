@@ -6,36 +6,6 @@ using Verse;
 
 namespace RimJoust.HarmonyPatches
 {
-	[StaticConstructorOnStartup]
-	internal static class JoustGizmoIcon
-	{
-		private static Texture2D _cached;
-		public static Texture2D Get()
-		{
-			if (_cached == null)
-			{
-				_cached = ContentFinder<Texture2D>.Get("UI/Commands/RimJoust_ChallengeJoust", reportFailure: false)
-					?? TexCommand.Attack;
-			}
-			return _cached;
-		}
-	}
-
-	[StaticConstructorOnStartup]
-	internal static class SquireGizmoIcon
-	{
-		private static Texture2D _cached;
-		public static Texture2D Get()
-		{
-			if (_cached == null)
-			{
-				_cached = ContentFinder<Texture2D>.Get("UI/Commands/RimJoust_SquireToggle", reportFailure: false)
-					?? TexCommand.Attack;
-			}
-			return _cached;
-		}
-	}
-
 	[HarmonyPatch(typeof(Pawn), nameof(Pawn.GetGizmos))]
 	internal static class Patch_Pawn_GetGizmos_Joust
 	{
@@ -57,7 +27,7 @@ namespace RimJoust.HarmonyPatches
 				{
 					defaultLabel = "RimJoust.SquireToggleLabel".Translate(),
 					defaultDesc = "RimJoust.SquireToggleDesc".Translate(),
-					icon = SquireGizmoIcon.Get(),
+					icon = RimJoust.UI.RimJoustIcons.SquireToggle,
 					isActive = () => tm.IsSquire(__instance),
 					toggleAction = () => tm.ToggleSquire(__instance),
 				};
@@ -71,7 +41,7 @@ namespace RimJoust.HarmonyPatches
 				{
 					defaultLabel = "RimJoust.JousterToggleLabel".Translate(),
 					defaultDesc = "RimJoust.JousterToggleDesc".Translate(),
-					icon = JoustGizmoIcon.Get(),
+					icon = RimJoust.UI.RimJoustIcons.JousterToggle,
 					isActive = () => tm.IsJouster(__instance),
 					toggleAction = () => tm.ToggleJouster(__instance),
 				};
@@ -85,7 +55,7 @@ namespace RimJoust.HarmonyPatches
 				{
 					defaultLabel = "RimJoust.EnrollGuestLabel".Translate(),
 					defaultDesc = "RimJoust.EnrollGuestDesc".Translate(),
-					icon = JoustGizmoIcon.Get(),
+					icon = RimJoust.UI.RimJoustIcons.EnrollGuest,
 					isActive = () => tm.IsEnrolledGuest(__instance),
 					toggleAction = () => tm.ToggleGuestEnrollment(__instance),
 				};

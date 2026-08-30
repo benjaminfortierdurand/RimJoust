@@ -25,8 +25,6 @@ namespace RimJoust.UI
 			var tm = TournamentManager.Instance;
 			if (tm == null) yield break;
 
-			var icon = ContentFinder<Texture2D>.Get("UI/Commands/RimJoust_ChallengeJoust", reportFailure: false)
-				?? TexCommand.Attack;
 
 			if (parent.def == RimJoustDefOf.RimJoust_MeleeSpot)
 			{
@@ -36,7 +34,7 @@ namespace RimJoust.UI
 					{
 						defaultLabel = "RimJoust.MeleeCancelLabel".Translate(),
 						defaultDesc = "RimJoust.MeleeCancelDesc".Translate(),
-						icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", reportFailure: false) ?? icon,
+						icon = RimJoustIcons.Cancel,
 						action = () => tm.Melee.Cancel(),
 					};
 				}
@@ -46,7 +44,7 @@ namespace RimJoust.UI
 					{
 						defaultLabel = "RimJoust.MeleeStartLabel".Translate(),
 						defaultDesc = "RimJoust.MeleeStartDesc".Translate(),
-						icon = icon,
+						icon = RimJoustIcons.Melee,
 						action = () =>
 						{
 							var map = parent.Map;
@@ -85,7 +83,7 @@ namespace RimJoust.UI
 					{
 						defaultLabel = "RimJoust.ArcheryCancelLabel".Translate(),
 						defaultDesc = "RimJoust.ArcheryCancelDesc".Translate(),
-						icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", reportFailure: false) ?? icon,
+						icon = RimJoustIcons.Cancel,
 						action = () => tm.Archery.Cancel(),
 					};
 				}
@@ -95,7 +93,7 @@ namespace RimJoust.UI
 					{
 						defaultLabel = "RimJoust.ArcheryStartLabel".Translate(),
 						defaultDesc = "RimJoust.ArcheryStartDesc".Translate(),
-						icon = icon,
+						icon = RimJoustIcons.Archery,
 						action = () =>
 						{
 							var map = parent.Map;
@@ -132,7 +130,7 @@ namespace RimJoust.UI
 			{
 				defaultLabel = "RimJoust.GuideGizmoLabel".Translate(),
 				defaultDesc = "RimJoust.GuideGizmoDesc".Translate(),
-				icon = ContentFinder<Texture2D>.Get("UI/Buttons/InfoButton", reportFailure: false) ?? icon,
+				icon = RimJoustIcons.Guide,
 				action = Window_JoustGuide.Open,
 			};
 
@@ -140,7 +138,7 @@ namespace RimJoust.UI
 			{
 				defaultLabel = "RimJoust.RoleGizmosLabel".Translate(),
 				defaultDesc = "RimJoust.RoleGizmosDesc".Translate(),
-				icon = ContentFinder<Texture2D>.Get("UI/Commands/RimJoust_SquireToggle", reportFailure: false) ?? icon,
+				icon = RimJoustIcons.RoleToggle,
 				isActive = () => tm.ShowRoleGizmos,
 				toggleAction = () => tm.ToggleRoleGizmos(),
 			};
@@ -149,7 +147,7 @@ namespace RimJoust.UI
 			{
 				defaultLabel = "RimJoust.GuestArrivalsLabel".Translate(),
 				defaultDesc = "RimJoust.GuestArrivalsDesc".Translate(),
-				icon = icon,
+				icon = RimJoustIcons.Guests,
 				isActive = () => tm.AllowGuestArrivals,
 				toggleAction = () => tm.ToggleGuestArrivals(),
 			};
@@ -160,7 +158,7 @@ namespace RimJoust.UI
 				{
 					defaultLabel = "RimJoust.BoardGizmoLabel".Translate(),
 					defaultDesc = "RimJoust.BoardGizmoDesc".Translate(),
-					icon = icon,
+					icon = RimJoustIcons.Results,
 					action = Window_TournamentBracket.Open,
 				};
 
@@ -168,7 +166,7 @@ namespace RimJoust.UI
 				{
 					defaultLabel = "RimJoust.CancelTournamentLabel".Translate(),
 					defaultDesc = "RimJoust.CancelTournamentDesc".Translate(),
-					icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", reportFailure: false) ?? icon,
+					icon = RimJoustIcons.Cancel,
 					action = () => Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
 						"RimJoust.CancelTournamentConfirm".Translate(),
 						() => tm.CancelTournament(),
@@ -181,7 +179,7 @@ namespace RimJoust.UI
 				{
 					defaultLabel = "RimJoust.GrandCancelLabel".Translate(),
 					defaultDesc = "RimJoust.GrandCancelDesc".Translate(),
-					icon = ContentFinder<Texture2D>.Get("UI/Designators/Cancel", reportFailure: false) ?? icon,
+					icon = RimJoustIcons.Cancel,
 					action = () => Find.WindowStack.Add(Dialog_MessageBox.CreateConfirmation(
 						"RimJoust.GrandCancelConfirm".Translate(),
 						() => tm.Grand.Cancel(tm),
@@ -193,7 +191,7 @@ namespace RimJoust.UI
 					{
 						defaultLabel = "RimJoust.ViewResultsLabel".Translate(),
 						defaultDesc = "RimJoust.ViewResultsDesc".Translate(),
-						icon = icon,
+						icon = RimJoustIcons.Results,
 						action = Window_TournamentBracket.Open,
 					};
 			}
@@ -205,7 +203,7 @@ namespace RimJoust.UI
 				{
 					defaultLabel = "RimJoust.StartTournamentLabel".Translate(),
 					defaultDesc = "RimJoust.StartTournamentDesc".Translate(),
-					icon = icon,
+					icon = RimJoustIcons.Tournament,
 					action = () => tm.TryStartTournamentFromMap(parent.Map),
 				};
 				if (tm.TournamentOnCooldown)
@@ -219,7 +217,7 @@ namespace RimJoust.UI
 				{
 					defaultLabel = "RimJoust.GrandStartLabel".Translate(),
 					defaultDesc = "RimJoust.GrandStartDesc".Translate(),
-					icon = icon,
+					icon = RimJoustIcons.GrandTournament,
 					action = () => tm.TryStartGrandFromMap(parent.Map),
 				};
 				if (tm.TournamentOnCooldown)
@@ -234,7 +232,7 @@ namespace RimJoust.UI
 					{
 						defaultLabel = "RimJoust.ViewResultsLabel".Translate(),
 						defaultDesc = "RimJoust.ViewResultsDesc".Translate(),
-						icon = icon,
+						icon = RimJoustIcons.Results,
 						action = Window_TournamentBracket.Open,
 					};
 			}

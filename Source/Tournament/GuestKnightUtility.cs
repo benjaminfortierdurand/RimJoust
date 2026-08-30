@@ -14,6 +14,7 @@ namespace RimJoust.Tournament
 		public ThingWithComps storedWeapon;
 		public ThingWithComps givenLance;
 		public bool gaveLance;
+		public bool followDrafted = true;
 
 		public void ExposeData()
 		{
@@ -22,6 +23,7 @@ namespace RimJoust.Tournament
 			Scribe_References.Look(ref storedWeapon, "storedWeapon");
 			Scribe_References.Look(ref givenLance, "givenLance");
 			Scribe_Values.Look(ref gaveLance, "gaveLance", false);
+			Scribe_Values.Look(ref followDrafted, "followDrafted", true);
 		}
 	}
 
@@ -31,6 +33,7 @@ namespace RimJoust.Tournament
 		public ThingWithComps storedWeapon;
 		public ThingWithComps givenLance;
 		public bool gaveLance;
+		public bool followDrafted = true;
 
 		public void ExposeData()
 		{
@@ -38,6 +41,7 @@ namespace RimJoust.Tournament
 			Scribe_References.Look(ref storedWeapon, "storedWeapon");
 			Scribe_References.Look(ref givenLance, "givenLance");
 			Scribe_Values.Look(ref gaveLance, "gaveLance", false);
+			Scribe_Values.Look(ref followDrafted, "followDrafted", true);
 		}
 	}
 
@@ -65,6 +69,11 @@ namespace RimJoust.Tournament
 			if (guest == null || map == null) return loadout;
 
 			guest.GetLord()?.RemovePawn(guest);
+			if (guest.playerSettings != null)
+			{
+				loadout.followDrafted = guest.playerSettings.followDrafted;
+				guest.playerSettings.followDrafted = false;
+			}
 			if (guest.drafter == null) guest.drafter = new Pawn_DraftController(guest);
 			guest.drafter.Drafted = true;
 
@@ -144,7 +153,10 @@ namespace RimJoust.Tournament
 		{
 			var loadout = new KnightLoadout { knight = knight };
 			var lanceDef = RimJoustDefOf.RimJoust_JoustingLance;
-			if (knight == null || lanceDef == null || knight.equipment == null || knight.HasJoustingLance())
+			if (knight == null) return loadout;
+
+			SuspendAnimalFollowing(knight, loadout);
+			if (lanceDef == null || knight.equipment == null || knight.HasJoustingLance())
 				return loadout;
 
 			var prev = knight.equipment.Primary;
@@ -167,10 +179,44 @@ namespace RimJoust.Tournament
 		public static KnightLoadout GiveTourneyBow(Pawn archer)
 			=> GiveLoanerWeapon(archer, DefDatabase<ThingDef>.GetNamedSilentFail("Bow_Recurve"));
 
+		public static void SuspendAnimalFollowing(Pawn p, KnightLoadout loadout)
+		{
+			var settings = p?.playerSettings;
+			if (settings == null) return;
+			if (loadout != null) loadout.followDrafted = settings.followDrafted;
+			settings.followDrafted = false;
+		}
+
+		public static void RestoreAnimalFollowing(Pawn p, bool previous)
+		{
+			var settings = p?.playerSettings;
+			if (settings != null) settings.followDrafted = previous;
+		}
+
+		public static void EnsureLoanerWeapon(KnightLoadout loadout)
+		{
+			var fighter = loadout?.knight;
+			if (fighter == null || fighter.Dead || !fighter.Spawned || fighter.equipment == null) return;
+
+			var wanted = loadout.givenLance;
+			if (wanted == null || wanted.Destroyed) return;
+			if (fighter.equipment.Primary == wanted) return;
+
+			var current = fighter.equipment.Primary;
+			if (current != null && fighter.inventory != null)
+				fighter.equipment.TryTransferEquipmentToContainer(current, fighter.inventory.innerContainer);
+			if (fighter.equipment.Primary != null) return;
+
+			if (wanted.holdingOwner != null) wanted.holdingOwner.Remove(wanted);
+			if (!wanted.Destroyed) fighter.equipment.AddEquipment(wanted);
+		}
+
 		private static KnightLoadout GiveLoanerWeapon(Pawn fighter, ThingDef weaponDef)
 		{
 			var loadout = new KnightLoadout { knight = fighter };
 			if (fighter == null || weaponDef == null || fighter.equipment == null) return loadout;
+
+			SuspendAnimalFollowing(fighter, loadout);
 
 			var prev = fighter.equipment.Primary;
 			if (prev != null && fighter.inventory != null
@@ -228,6 +274,7 @@ namespace RimJoust.Tournament
 		{
 			if (loadout == null) return;
 			var knight = loadout.knight;
+			RestoreAnimalFollowing(knight, loadout.followDrafted);
 			var modGave = loadout.gaveLance || loadout.storedWeapon != null;
 
 			if (loadout.givenLance != null)
@@ -254,6 +301,8 @@ namespace RimJoust.Tournament
 		{
 			var guest = loadout?.guest;
 			if (guest == null) return;
+
+			if (guest.playerSettings != null) guest.playerSettings.followDrafted = loadout.followDrafted;
 
 			if (!guest.Dead && guest.IsMounted())
 			{

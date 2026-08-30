@@ -28,17 +28,24 @@ namespace RimJoust.Buildings
 			base.Print(layer);
 		}
 
+		public override string GetInspectString()
+		{
+			var s = base.GetInspectString();
+			if (!markerHidden) return s;
+			var line = "RimJoust.MarkerHidden".Translate();
+			return s.NullOrEmpty() ? line : s + "\n" + line;
+		}
+
 		public override IEnumerable<Gizmo> GetGizmos()
 		{
 			foreach (var g in base.GetGizmos()) yield return g;
 
 			yield return new Command_Toggle
 			{
-				defaultLabel = "RimJoust.HideSpotLabel".Translate(),
-				defaultDesc = "RimJoust.HideSpotDesc".Translate(),
-				icon = ContentFinder<Texture2D>.Get("UI/Commands/RimJoust_HideSpot", reportFailure: false)
-					?? TexCommand.ForbidOff,
-				isActive = () => markerHidden,
+				defaultLabel = "RimJoust.ShowSpotLabel".Translate(),
+				defaultDesc = "RimJoust.ShowSpotDesc".Translate(),
+				icon = TexCommand.GatherSpotActive,
+				isActive = () => !markerHidden,
 				toggleAction = () =>
 				{
 					markerHidden = !markerHidden;

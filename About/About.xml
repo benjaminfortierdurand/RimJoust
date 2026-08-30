@@ -6,47 +6,19 @@
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<modVersion>1.8.1</modVersion>
+	<modVersion>1.8.2</modVersion>
 	<modIconPath>UI/RimJoustIcon</modIconPath>
-	<description>Medieval tournaments for your colony: jousting, grand melee, archery, and the full three-event Grand Tournament. Very Game of Thrones.
+	<description>Medieval tournaments for your colony. Two knights ride at each other with lances, a field of fighters settles it on foot with blunted maces, archers put three volleys into a straw butt, and a Grand Tournament chains all three events together and crowns a single champion on points.
 
-It's my first mod. I made it for my own medieval ASOIAF run and figured I might as well share it.
+Everything runs on markers you place. Two flags mark out the lists, a trophy post marks the melee ground, a line flag and a butt make the archery range. Build whatever you like around them, stands, walls, tents, banners. The mod follows your markers, so the arena is yours.
 
-[b]The joust[/b]
-Put your colonists on a horse (with Giddy-Up 2) and run a tournament. The lance is handed out automatically. They charge and hit each other when they cross. Armor and a shield make it harder to get knocked off, so a well armored knight stays in the saddle longer. Last one still mounted wins the pass.
+Mount your colonists with Giddy-Up and hold a tournament. Lances are handed out and taken back automatically. Armor and a shield keep a knight in the saddle longer, so equipment matters. Squires drag the fallen off the field, your free colonists come to watch from the stands, and knights from other factions can enter and ride against yours. Nothing that happens in the lists ever costs you faction goodwill.
 
-[b]The grand melee[/b]
-Plant the melee trophy post, fence an arena around it (the auto button fits the boundary to your walls, any shape), and let your fighters settle it on foot with blunted tourney maces. Last one standing wins. Down means out, not dead.
+The winner is crowned champion and names a Queen of Love and Beauty, which sometimes goes exactly as everyone expected and sometimes turns into a scandal nobody forgets. Past champions are kept in a hall of fame.
 
-[b]The archery contest[/b]
-A line flag, a straw butt, three volleys, loaner bows for everyone so nobody blames the equipment. Most hits wins, Shooting skill breaks ties. Keep the lane clear, stray arrows don't ask first.
+Tournaments hurt people, this is still RimWorld. There are sliders for that, and a button on the flag to call the whole thing off when it stops being fun.
 
-[b]The Grand Tournament[/b]
-All three events back to back. Every event awards points by ranking, the total crowns the grand champion, and the letter at the end has the full standings. One name for the chronicles.
-
-[b]What you also get[/b]
-- Tournaments with brackets (single elimination), and a board with the bouts, the bracket, a journal, and a hall of fame of past champions.
-- Squires: tag a colonist as a squire, he carries the knocked out knights to a recovery area, so the lists are clear for the next bout.
-- A crowd: your free colonists come watch in the stands, around the melee arena, and behind the archery line. Never downrange.
-- Guest knights: visitors from other factions can join the joust against your colonists. Nothing that happens in the lists touches faction goodwill.
-- The winner is crowned champion and crowns a Queen of Love and Beauty.
-- A little 3-2-1 countdown before the charge, with a horn.
-- Tournaments can hurt people, it's RimWorld. There are sliders in the settings if you want it more or less deadly, and a cancel button on the flag if things stop being fun.
-
-[b]Build your own arena[/b]
-The whole thing works with spots you place: the two flags for the lists, knight and squire posts, a horse spot, a recovery area, a dead spot, the melee trophy post, the archery line and its butt. Put them where you want and build around them, stands, walls, a tent, whatever you like. The mod just follows your markers, so the arena is yours.
-
-[b]Compatibility[/b]
-Works with Medieval Overhaul (all its shields count for the joust). Shield detection is done by class name, so it also catches Vanilla Factions Expanded - Medieval and other VFE shields. You don't need any of those though, just Giddy-Up 2.
-
-[b]Needs[/b]
-- Harmony
-- Giddy-Up 2 (Continued)
-
-[b]About the screenshots[/b]
-A lot of the buildings you see in the images and the trailer (tents, stands, walls and that kind of thing) come from other mods, mostly Medieval Overhaul and Camping Tent. They are not part of RimJoust, I just used them to build the arena.
-
-First mod and still work in progress, so if something breaks just tell me.
+Most of the buildings in the screenshots (tents, stands, walls) come from other mods, mostly Medieval Overhaul. They are not part of RimJoust, I just used them to build the arena.
 
 BenFD</description>
 	<modDependencies>
