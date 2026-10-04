@@ -64,10 +64,10 @@
 	<RimJoust.Settings.DangerousHitHint>(chance a blow hits the head or organs, so coma, bad injury or death)</RimJoust.Settings.DangerousHitHint>
 	<RimJoust.Settings.FallDamage>Fall damage</RimJoust.Settings.FallDamage>
 	<RimJoust.Settings.MeleeDamage>Grand melee damage (lower means fewer fractures)</RimJoust.Settings.MeleeDamage>
-	<RimJoust.ArenaRadiusPlus>Arena: {0} (+1)</RimJoust.ArenaRadiusPlus>
-	<RimJoust.ArenaRadiusMinus>Arena: {0} (-1)</RimJoust.ArenaRadiusMinus>
+	<RimJoust.ArenaRadiusPlus>Radius {0} +</RimJoust.ArenaRadiusPlus>
+	<RimJoust.ArenaRadiusMinus>Radius {0} -</RimJoust.ArenaRadiusMinus>
 	<RimJoust.ArenaRadiusDesc>Adjust the melee arena radius around this post. The white outline shows the boundary in real time while the post is selected: fighters who cross it are herded back to the center, and the crowd settles just outside it.</RimJoust.ArenaRadiusDesc>
-	<RimJoust.ArenaRadiusAuto>Arena: auto</RimJoust.ArenaRadiusAuto>
+	<RimJoust.ArenaRadiusAuto>Auto</RimJoust.ArenaRadiusAuto>
 	<RimJoust.ArenaRadiusAutoDesc>Detects the enclosure around the post (railings, walls, doors) and fits the arena to its exact shape, rectangles included. The white outline shows the covered surface while the post is selected. The + and - buttons switch back to circle mode. Needs a closed enclosure: if it leaks somewhere, the button will tell you.</RimJoust.ArenaRadiusAutoDesc>
 	<RimJoust.ArenaNotEnclosed>The arena is not enclosed (or is wider than {0} cells). Surround the post with railings or walls, with a door to get in, then try again.</RimJoust.ArenaNotEnclosed>
 	<RimJoust.ArenaAutoFit>Arena fitted to the enclosure: {0} cells covered.</RimJoust.ArenaAutoFit>
@@ -83,7 +83,7 @@
 
 	<!-- Joust markers -->
 	<RimJoust.ShowSpotLabel>Show marker</RimJoust.ShowSpotLabel>
-	<RimJoust.ShowSpotDesc>Shows or hides this marker's graphic. The flag or post is still there and still works either way, you just stop seeing it. Useful once your lists are set up, or for screenshots. Select several markers to switch them all at once.</RimJoust.ShowSpotDesc>
+	<RimJoust.ShowSpotDesc>Show or hide the marker. The lists keep working either way.</RimJoust.ShowSpotDesc>
 	<RimJoust.MarkerHidden>Marker hidden.</RimJoust.MarkerHidden>
 
 	<!-- Guest knights -->
@@ -154,10 +154,11 @@
 	<RimJoust.ArcheryCancelled>The archery contest is called off.</RimJoust.ArcheryCancelled>
 	<RimJoust.ArcheryTargetGone>The archery butt is gone. Hard to score hits on thin air.</RimJoust.ArcheryTargetGone>
 	<RimJoust.ArcheryLaneBlocked>Cannot line up all the archers: the shooting line is blocked, or the butt is too far (23 cells max from every spot on the line, with clear sight).</RimJoust.ArcheryLaneBlocked>
+	<RimJoust.ArcheryLaneReport>Line check: {0} usable spot(s) for {1} archer(s), butt at {2} cells. Rejected: {3} blocked or unwalkable, {4} out of range, {5} no line of sight.</RimJoust.ArcheryLaneReport>
 
 	<!-- Grand tournament -->
 	<RimJoust.GrandStartLabel>Hold a GRAND tournament</RimJoust.GrandStartLabel>
-	<RimJoust.GrandStartDesc>Three events back to back: the joust, the archery contest, then the grand melee. Every event awards points by ranking, and the total crowns the grand champion. Mounted colonists compete, same as a tournament (and if you tagged jousters, only they enter). Needs the lists (flags A and B), the melee trophy post, the archery line and its butt, all on this map.</RimJoust.GrandStartDesc>
+	<RimJoust.GrandStartDesc>Three events back to back: the joust, the archery contest, then the grand melee. Every event awards points by ranking, and the total crowns the grand champion. Mounted colonists compete, same as a tournament (and if you tagged jousters, only they enter). Guest knights you entered ride in all three events too. Needs the lists (flags A and B), the melee trophy post, the archery line and its butt, all on this map.</RimJoust.GrandStartDesc>
 	<RimJoust.GrandMissing>Missing for a grand tournament: {0}.</RimJoust.GrandMissing>
 	<RimJoust.GrandNeedLists>the lists (flags A and B)</RimJoust.GrandNeedLists>
 	<RimJoust.GrandNeedMelee>the melee trophy post</RimJoust.GrandNeedMelee>
@@ -238,7 +239,7 @@
 	<RimJoust.Guide.Title>Tournament guide</RimJoust.Guide.Title>
 
 	<RimJoust.Guide.ListsTitle>Laying out the lists</RimJoust.Guide.ListsTitle>
-	<RimJoust.Guide.ListsBody>A joust is run down the lists: a straight lane between two flags.\n\n- Place a flag A and a flag B (Architect → Misc) at each end, on the same map. Use clearly different colors so you don't mix them up.\n- A list barrier down the middle helps the horses charge straight.\n- You can add a recovery area and a dead spot: squires use them to clear fallen knights.\n\nOnce the lists are laid out you never touch them again. The "Hide marker" button on a flag hides the marker for clean screenshots without breaking anything.</RimJoust.Guide.ListsBody>
+	<RimJoust.Guide.ListsBody>A joust is run down the lists: a straight lane between two flags.\n\n- Place a flag A and a flag B (Architect → Misc) at each end, on the same map. Use clearly different colors so you don't mix them up.\n- A list barrier down the middle helps the horses charge straight.\n- You can add a recovery area and a dead spot: squires use them to clear fallen knights.\n\nOnce the lists are laid out you never touch them again. Turning off "Show marker" on a flag hides it for clean screenshots without breaking anything.</RimJoust.Guide.ListsBody>
 
 	<RimJoust.Guide.RolesTitle>The roles: jouster and squire</RimJoust.Guide.RolesTitle>
 	<RimJoust.Guide.RolesBody>Select a colonist to see their role buttons.\n\nJouster: you pick who takes part in the tournament. If you mark no one, all your mounted colonists joust by default. Handy to enter only your best.\n\nSquire: during a tournament they pick up fallen knights and carry them to the recovery area, clearing the lists between bouts. They need a recovery area placed so they know where to take them.</RimJoust.Guide.RolesBody>
@@ -259,7 +260,7 @@
 	<RimJoust.Guide.ArcheryBody>- Place the archery line flag, and the butt 10-20 cells across from it, with a clear lane between them. Nothing precious or alive behind the butt: stray arrows do not ask first.\n- Click the flag: colonists tagged as jousters line up, each gets a loaner recurve bow (fairness first, we test the archer, not the arsenal), and shoot three volleys at the butt.\n\nEvery hit counts, with the shooter's name popping above the target. Most hits wins, Shooting skill breaks ties. Black eyes and bad arms cost accuracy, as they should. The crowd watches politely behind the line, never downrange.</RimJoust.Guide.ArcheryBody>
 
 	<RimJoust.Guide.GrandTitle>The Grand Tournament</RimJoust.Guide.GrandTitle>
-	<RimJoust.Guide.GrandBody>Three events back to back, like in the chronicles: the joust, the archery contest, then the grand melee.\n\n- You need the full setup on the same map: the lists (flags A and B), the melee trophy post, the archery line and its butt.\n- Mount your knights and click "Hold a GRAND tournament" on a lists flag. Mounted colonists compete, same as a regular tournament.\n\nEvery event awards points by ranking. The wounded fight on as long as they can stand; anyone down skips the event. At the end, the total crowns the grand champion: a letter with the overall standings, honors, the Queen of Love and Beauty, and a "Grand tournament" entry in the hall of fame.</RimJoust.Guide.GrandBody>
+	<RimJoust.Guide.GrandBody>Three events back to back, like in the chronicles: the joust, the archery contest, then the grand melee.\n\n- You need the full setup on the same map: the lists (flags A and B), the melee trophy post, the archery line and its butt.\n- Mount your knights and click "Hold a GRAND tournament" on a lists flag. Mounted colonists compete, same as a regular tournament, and guest knights you entered stay for all three events.\n\nEvery event awards points by ranking. The wounded fight on as long as they can stand; anyone down skips the event. At the end, the total crowns the grand champion: a letter with the overall standings, honors, the Queen of Love and Beauty, and a "Grand tournament" entry in the hall of fame.</RimJoust.Guide.GrandBody>
 
 	<RimJoust.Guide.SafetyTitle>Settings and danger</RimJoust.Guide.SafetyTitle>
 	<RimJoust.Guide.SafetyBody>In the mod options you can set lance damage, unhorse chance, dangerous hit risk, fall damage, grand melee damage and the cooldown between tournaments.\n\nTrait effects (brawler, tough, nimble, wimp, bloodlust, psychopath...) can be turned on or off.\n\nJousting uses no skill of its own: it leans on your Melee (the lance strike) and your Animals (handling the mount). The melee is pure Melee, and the archery contest pure Shooting. To make better champions, train all of it, at the quintain or in tournaments.</RimJoust.Guide.SafetyBody>

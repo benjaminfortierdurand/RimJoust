@@ -32,7 +32,7 @@ namespace RimJoust.Buildings
 
 			var pos = drawLoc;
 			pos.y += 0.04f;
-			var matrix = Matrix4x4.TRS(pos, Quaternion.AngleAxis(_armAngle, Vector3.up), new Vector3(2.6f, 1f, 0.86f));
+			var matrix = Matrix4x4.TRS(pos, Quaternion.AngleAxis(_armAngle, Vector3.up), new Vector3(2.6f, 1f, 2.6f));
 			Graphics.DrawMesh(MeshPool.plane10, matrix, ArmMat, 0);
 		}
 

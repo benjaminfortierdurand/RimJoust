@@ -43,6 +43,19 @@ namespace RimJoust.Tournament
 		public static Thing FindTarget(Map map)
 			=> map?.listerThings.ThingsOfDef(RimJoustDefOf.RimJoust_ArcheryTarget).FirstOrDefault();
 
+		public static Thing FindTarget(Map map, IntVec3 near)
+		{
+			if (map == null) return null;
+			Thing best = null;
+			var bestDist = float.MaxValue;
+			foreach (var t in map.listerThings.ThingsOfDef(RimJoustDefOf.RimJoust_ArcheryTarget))
+			{
+				var d = t.Position.DistanceTo(near);
+				if (d < bestDist) { bestDist = d; best = t; }
+			}
+			return best;
+		}
+
 		public static Thing FindSpot(Map map)
 			=> map?.listerThings.ThingsOfDef(RimJoustDefOf.RimJoust_ArcherySpot).FirstOrDefault();
 
@@ -68,8 +81,10 @@ namespace RimJoust.Tournament
 			_lineCenter = lineCenter;
 			if (!ComputeLine(lineCenter, map))
 			{
-				Messages.Message("RimJoust.ArcheryLaneBlocked".Translate(),
+				Messages.Message("RimJoust.ArcheryLaneBlocked".Translate() + "\n" + LastLineReport(lineCenter),
 					MessageTypeDefOf.RejectInput, historical: false);
+				Log.Message("[RimJoust] concours de tir refuse : " + LastLineReport(lineCenter)
+					+ " fanion=" + lineCenter + " butte=" + _target.Position);
 				_archers.Clear();
 				_target = null;
 				return false;
@@ -90,31 +105,56 @@ namespace RimJoust.Tournament
 		private const float MaxShotDistance = 23f;
 		private const int MaxLineHalfWidth = 14;
 
+		private int _rejectedWalk;
+		private int _rejectedRange;
+		private int _rejectedSight;
+
 		private bool ComputeLine(IntVec3 center, Map map)
 		{
 			_lineCells.Clear();
+			_rejectedWalk = _rejectedRange = _rejectedSight = 0;
 			var dx = _target.Position.x - center.x;
 			var dz = _target.Position.z - center.z;
-			var perp = System.Math.Abs(dx) >= System.Math.Abs(dz)
-				? new IntVec3(0, 0, 1)
-				: new IntVec3(1, 0, 0);
+			var horizontal = System.Math.Abs(dx) >= System.Math.Abs(dz);
+			var perp = horizontal ? new IntVec3(0, 0, 1) : new IntVec3(1, 0, 0);
+			var back = horizontal
+				? new IntVec3(-System.Math.Sign(dx), 0, 0)
+				: new IntVec3(0, 0, -System.Math.Sign(dz));
 
 			var needed = _archers.Count;
-			for (var j = 0; j <= MaxLineHalfWidth && _lineCells.Count < needed; j += LineSpacing)
+			for (var row = 0; row < 2 && _lineCells.Count < needed; row++)
 			{
-				TryAddLineCell(center + perp * j, map);
-				if (j > 0 && _lineCells.Count < needed)
-					TryAddLineCell(center - perp * j, map);
+				var origin = center + back * row;
+				for (var j = 0; j <= MaxLineHalfWidth && _lineCells.Count < needed; j += LineSpacing)
+				{
+					TryAddLineCell(origin + perp * j, map);
+					if (j > 0 && _lineCells.Count < needed)
+						TryAddLineCell(origin - perp * j, map);
+				}
 			}
 			return _lineCells.Count >= needed;
 		}
 
+		public string LastLineReport(IntVec3 center)
+		{
+			var dist = _target != null ? center.DistanceTo(_target.Position) : -1f;
+			return "RimJoust.ArcheryLaneReport".Translate(
+				_lineCells.Count, _archers.Count, dist.ToString("F0"),
+				_rejectedWalk, _rejectedRange, _rejectedSight);
+		}
+
 		private void TryAddLineCell(IntVec3 c, Map map)
 		{
-			if (!c.InBounds(map) || !c.Standable(map)) return;
-			if (c.DistanceTo(_target.Position) > MaxShotDistance) return;
-			if (!GenSight.LineOfSight(c, _target.Position, map, skipFirstCell: true)) return;
+			if (!c.InBounds(map) || !c.Walkable(map) || BlockedByEdifice(c, map)) { _rejectedWalk++; return; }
+			if (c.DistanceTo(_target.Position) > MaxShotDistance) { _rejectedRange++; return; }
+			if (!GenSight.LineOfSight(c, _target.Position, map, skipFirstCell: true)) { _rejectedSight++; return; }
 			_lineCells.Add(c);
+		}
+
+		private static bool BlockedByEdifice(IntVec3 c, Map map)
+		{
+			var edifice = c.GetEdifice(map);
+			return edifice != null && edifice.def.passability == Traversability.Impassable;
 		}
 
 		private static void PrepareArcher(Pawn p, IntVec3 spot)

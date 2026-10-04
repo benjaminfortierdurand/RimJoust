@@ -38,6 +38,7 @@
 		<graphicData>
 			<texPath>Things/Building/RimJoust_Flag</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
 	</ThingDef>
@@ -49,6 +50,7 @@
 		<graphicData>
 			<texPath>Things/Building/RimJoust_Flag</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1,1)</drawSize>
 		</graphicData>
 	</ThingDef>
@@ -56,17 +58,13 @@
 	<ThingDef ParentName="RimJoust_SpotBase">
 		<defName>RimJoust_MeleeSpot</defName>
 		<label>melee trophy post</label>
-		<description>The trophy post marking the center of the grand melee ground: an iron-rimmed shield and two crossed axes, so nobody wonders what happens here. Select the post to see the arena boundary: the auto button fits it to your enclosure (railings, walls, doors), the + and - buttons set a circle by hand. Fighters who leave the boundary are herded back to the center.</description>
+		<description>The trophy post marking the center of the grand melee ground: an iron-rimmed shield and two crossed axes, so nobody wonders what happens here. Select the post to see the arena boundary: the auto button fits it to your enclosure (railings, walls, doors), the + and - buttons set a circle by hand. Fighters who leave the boundary are herded back to the center. The shield takes the colour of the material you build it from, so pick your house colours.</description>
 		<graphicData>
 			<texPath>Things/Building/RimJoust_MeleeMarker</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.3,1.3)</drawSize>
 		</graphicData>
-		<stuffCategories Inherit="False" />
-		<costStuffCount>0</costStuffCount>
-		<costList>
-			<WoodLog>25</WoodLog>
-		</costList>
 		<comps>
 			<li Class="RimJoust.Buildings.CompProperties_MeleeArena" />
 		</comps>

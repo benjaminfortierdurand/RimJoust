@@ -17,6 +17,7 @@ namespace RimJoust.UI
 		public static readonly Texture2D JousterToggle = Load("RimJoust_JousterToggle");
 		public static readonly Texture2D SquireToggle = Load("RimJoust_SquireToggle");
 		public static readonly Texture2D EnrollGuest = Load("RimJoust_EnrollGuest");
+		public static readonly Texture2D ShowMarker = Load("RimJoust_ShowMarker");
 		public static readonly Texture2D Guide =
 			ContentFinder<Texture2D>.Get("UI/Buttons/InfoButton", reportFailure: false) ?? Load("RimJoust_Tournament");
 		public static readonly Texture2D Cancel =

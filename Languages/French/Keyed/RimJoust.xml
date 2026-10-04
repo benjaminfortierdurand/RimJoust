@@ -64,10 +64,10 @@
 	<RimJoust.Settings.DangerousHitHint>(les chances qu'un coup parte dans la tête ou les organes : coma, grosse blessure, des fois la mort)</RimJoust.Settings.DangerousHitHint>
 	<RimJoust.Settings.FallDamage>Dégâts de la chute</RimJoust.Settings.FallDamage>
 	<RimJoust.Settings.MeleeDamage>Dégâts en mêlée générale (plus bas = moins de fractures)</RimJoust.Settings.MeleeDamage>
-	<RimJoust.ArenaRadiusPlus>Arène : {0} (+1)</RimJoust.ArenaRadiusPlus>
-	<RimJoust.ArenaRadiusMinus>Arène : {0} (-1)</RimJoust.ArenaRadiusMinus>
+	<RimJoust.ArenaRadiusPlus>Rayon {0} +</RimJoust.ArenaRadiusPlus>
+	<RimJoust.ArenaRadiusMinus>Rayon {0} -</RimJoust.ArenaRadiusMinus>
 	<RimJoust.ArenaRadiusDesc>Ajuste le rayon de l'arène de mêlée autour de ce poteau. Le contour blanc montre la limite en temps réel quand le poteau est sélectionné : les combattants qui la franchissent sont ramenés vers le centre, et le public s'installe juste derrière.</RimJoust.ArenaRadiusDesc>
-	<RimJoust.ArenaRadiusAuto>Arène : auto</RimJoust.ArenaRadiusAuto>
+	<RimJoust.ArenaRadiusAuto>Auto</RimJoust.ArenaRadiusAuto>
 	<RimJoust.ArenaRadiusAutoDesc>Détecte l'enceinte autour du poteau (rambardes, murs, portes) et cale l'arène exactement sur sa forme, rectangle compris. Le contour blanc montre la surface retenue quand le poteau est sélectionné. Les boutons + et - repassent en mode cercle. Il faut une enceinte fermée : si ça fuit quelque part, le bouton te le dira.</RimJoust.ArenaRadiusAutoDesc>
 	<RimJoust.ArenaNotEnclosed>L'arène n'est pas fermée (ou fait plus de {0} cases de rayon). Entoure le poteau de rambardes ou de murs, avec une porte pour entrer, puis réessaie.</RimJoust.ArenaNotEnclosed>
 	<RimJoust.ArenaAutoFit>Arène calée sur l'enceinte : {0} cases couvertes.</RimJoust.ArenaAutoFit>
@@ -82,9 +82,9 @@
 	<RimJoust.RecoverIn>Récupère dans ~{0} h de jeu</RimJoust.RecoverIn>
 
 	<!-- Marqueurs de joute -->
-	<RimJoust.ShowSpotLabel>Afficher le repère</RimJoust.ShowSpotLabel>
-	<RimJoust.ShowSpotDesc>Affiche ou cache ce marqueur. Le fanion ou le poste est toujours là et marche pareil, c'est juste qu'on le voit plus. Pratique une fois ta lice montée, ou pour faire des captures d'écran propres. Sélectionne plusieurs marqueurs d'un coup pour tous les basculer en même temps.</RimJoust.ShowSpotDesc>
-	<RimJoust.MarkerHidden>Repère masqué.</RimJoust.MarkerHidden>
+	<RimJoust.ShowSpotLabel>Afficher le marqueur</RimJoust.ShowSpotLabel>
+	<RimJoust.ShowSpotDesc>Afficher ou masquer le marqueur. La lice fonctionne dans les deux cas.</RimJoust.ShowSpotDesc>
+	<RimJoust.MarkerHidden>Marqueur masqué.</RimJoust.MarkerHidden>
 
 	<!-- Chevaliers invités -->
 	<RimJoust.EnrollGuestLabel>Inscrire au tournoi</RimJoust.EnrollGuestLabel>
@@ -154,10 +154,11 @@
 	<RimJoust.ArcheryCancelled>Le concours de tir est annulé.</RimJoust.ArcheryCancelled>
 	<RimJoust.ArcheryTargetGone>La butte de tir a disparu. Difficile de compter les touches dans le vide.</RimJoust.ArcheryTargetGone>
 	<RimJoust.ArcheryLaneBlocked>Impossible d'aligner tous les archers : ligne de tir bloquée, ou butte trop loin (23 cases max depuis chaque case de la ligne, avec vue dégagée).</RimJoust.ArcheryLaneBlocked>
+	<RimJoust.ArcheryLaneReport>Contrôle de la ligne : {0} place(s) valide(s) pour {1} archer(s), butte à {2} cases. Rejets : {3} bloquée(s) ou impraticable(s), {4} hors de portée, {5} sans ligne de vue.</RimJoust.ArcheryLaneReport>
 
 	<!-- Grand tournoi -->
 	<RimJoust.GrandStartLabel>Organiser un GRAND tournoi</RimJoust.GrandStartLabel>
-	<RimJoust.GrandStartDesc>Trois épreuves à la suite : la joute, le tir à l'arc, puis la mêlée générale. Chaque épreuve rapporte des points selon le classement, et le cumul désigne le grand champion. Les colons à cheval participent, comme pour un tournoi (et si tu as marqué des Jouteurs, seuls eux concourent). Il faut la lice (fanions A et B), le poteau de mêlée, le pas de tir et sa butte, tous sur cette carte.</RimJoust.GrandStartDesc>
+	<RimJoust.GrandStartDesc>Trois épreuves à la suite : la joute, le tir à l'arc, puis la mêlée générale. Chaque épreuve rapporte des points selon le classement, et le cumul désigne le grand champion. Les colons à cheval participent, comme pour un tournoi (et si tu as marqué des Jouteurs, seuls eux concourent). Les chevaliers invités que tu as inscrits concourent aussi sur les trois épreuves. Il faut la lice (fanions A et B), le poteau de mêlée, le pas de tir et sa butte, tous sur cette carte.</RimJoust.GrandStartDesc>
 	<RimJoust.GrandMissing>Il manque pour le grand tournoi : {0}.</RimJoust.GrandMissing>
 	<RimJoust.GrandNeedLists>la lice (fanions A et B)</RimJoust.GrandNeedLists>
 	<RimJoust.GrandNeedMelee>le poteau de mêlée</RimJoust.GrandNeedMelee>
@@ -238,7 +239,7 @@
 	<RimJoust.Guide.Title>Guide du tournoi</RimJoust.Guide.Title>
 
 	<RimJoust.Guide.ListsTitle>Monter la lice</RimJoust.Guide.ListsTitle>
-	<RimJoust.Guide.ListsBody>Une joute se court dans une lice : un couloir droit entre deux fanions.\n\n- Pose un fanion A et un fanion B (Architecte → Divers) aux deux bouts, sur la même carte. Prends des couleurs bien différentes pour pas t'y perdre.\n- Entre les deux, une barrière de lice aide les chevaux à charger droit.\n- Tu peux ajouter une aire de récupération et un point des défunts : les écuyers s'en servent pour dégager les tombés.\n\nUne fois la lice tracée, tu n'y touches plus. Sur un fanion, le bouton « Masquer le repère » cache le marqueur pour des captures propres, sans rien casser.</RimJoust.Guide.ListsBody>
+	<RimJoust.Guide.ListsBody>Une joute se court dans une lice : un couloir droit entre deux fanions.\n\n- Pose un fanion A et un fanion B (Architecte → Divers) aux deux bouts, sur la même carte. Prends des couleurs bien différentes pour pas t'y perdre.\n- Entre les deux, une barrière de lice aide les chevaux à charger droit.\n- Tu peux ajouter une aire de récupération et un point des défunts : les écuyers s'en servent pour dégager les tombés.\n\nUne fois la lice tracée, tu n'y touches plus. Sur un fanion, couper « Afficher le marqueur » le cache pour des captures propres, sans rien casser.</RimJoust.Guide.ListsBody>
 
 	<RimJoust.Guide.RolesTitle>Les rôles : jouteur et écuyer</RimJoust.Guide.RolesTitle>
 	<RimJoust.Guide.RolesBody>Sélectionne un colon pour voir ses boutons de rôle.\n\nJouteur : tu choisis qui participe au tournoi. Si tu ne marques personne, tous tes colons à cheval joutent par défaut. Pratique pour ne faire concourir que tes meilleurs.\n\nÉcuyer : pendant le tournoi, il va ramasser les chevaliers tombés et les porte à l'aire de récupération, pour dégager la lice entre deux duels. Il lui faut une aire de récupération posée pour savoir où les emmener.</RimJoust.Guide.RolesBody>
@@ -259,7 +260,7 @@
 	<RimJoust.Guide.ArcheryBody>- Pose le fanion de pas de tir, et la butte de tir à 10-20 cases en face, avec une ligne dégagée entre les deux. Rien de précieux ni de vivant derrière la butte : les flèches perdues ne préviennent pas.\n- Clique le fanion : les colons marqués Jouteur s'alignent, chacun reçoit un arc recourbé de prêt (équité oblige, on teste le tireur, pas l'arsenal), et tirent trois volées sur la butte.\n\nChaque touche compte, avec le nom du tireur affiché au-dessus de la cible. Le plus de touches gagne, la compétence Tir départage. Les yeux au beurre noir et les bras en écharpe se paient cash sur la précision. Le public regarde sagement derrière la ligne, jamais dans l'axe.</RimJoust.Guide.ArcheryBody>
 
 	<RimJoust.Guide.GrandTitle>Le Grand Tournoi</RimJoust.Guide.GrandTitle>
-	<RimJoust.Guide.GrandBody>Trois épreuves à la suite, comme dans les chroniques : la joute, le tir à l'arc, puis la mêlée générale.\n\n- Il faut tout l'équipement sur la même carte : la lice (fanions A et B), le poteau de mêlée, le pas de tir et sa butte.\n- Mets tes chevaliers à cheval et clique « Organiser un GRAND tournoi » sur un fanion de lice. Les colons montés participent, comme pour un tournoi simple.\n\nChaque épreuve rapporte des points selon le classement. Les blessés continuent tant qu'ils tiennent debout ; ceux au tapis sautent l'épreuve. À la fin, le cumul désigne le grand champion : lettre avec le classement général, honneurs, reine d'amour et de beauté, et une entrée « Grand Tournoi » au palmarès du tableau.</RimJoust.Guide.GrandBody>
+	<RimJoust.Guide.GrandBody>Trois épreuves à la suite, comme dans les chroniques : la joute, le tir à l'arc, puis la mêlée générale.\n\n- Il faut tout l'équipement sur la même carte : la lice (fanions A et B), le poteau de mêlée, le pas de tir et sa butte.\n- Mets tes chevaliers à cheval et clique « Organiser un GRAND tournoi » sur un fanion de lice. Les colons montés participent comme pour un tournoi simple, et les chevaliers invités que tu as inscrits restent pour les trois épreuves.\n\nChaque épreuve rapporte des points selon le classement. Les blessés continuent tant qu'ils tiennent debout ; ceux au tapis sautent l'épreuve. À la fin, le cumul désigne le grand champion : lettre avec le classement général, honneurs, reine d'amour et de beauté, et une entrée « Grand Tournoi » au palmarès du tableau.</RimJoust.Guide.GrandBody>
 
 	<RimJoust.Guide.SafetyTitle>Réglages et dangerosité</RimJoust.Guide.SafetyTitle>
 	<RimJoust.Guide.SafetyBody>Dans les options du mod tu règles les dégâts de lance, la chance de désarçonnement, le risque de coup dangereux, les dégâts de chute, les dégâts de mêlée et le délai entre deux tournois.\n\nLes effets des traits (bagarreur, coriace, agile, mauviette, sanguinaire, psychopathe...) peuvent s'activer ou se couper.\n\nLa joute n'utilise pas de compétence à part : elle s'appuie sur ton Melee (la frappe à la lance) et tes Animaux (la maîtrise de la monture). La mêlée, c'est du pur Melee, et le concours d'arc du pur Tir. Pour faire de meilleurs champions, entraîne tout ça, au quintain ou en tournoi.</RimJoust.Guide.SafetyBody>

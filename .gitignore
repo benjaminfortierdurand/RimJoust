@@ -1,7 +1,6 @@
 # Jamais sur GitHub : code decompile du jeu et notes de travail
 .research/
 _concept/
-.claude/
 
 # Build artifacts
 Source/bin/

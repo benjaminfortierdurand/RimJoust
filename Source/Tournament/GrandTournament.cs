@@ -23,14 +23,21 @@ namespace RimJoust.Tournament
 		public int PointsOf(Pawn p)
 			=> p != null && _points.TryGetValue(p.thingIDNumber, out var n) ? n : 0;
 
-		public bool TryStart(TournamentManager tm, Map map, List<Pawn> fighters)
+		public bool TryStart(TournamentManager tm, Map map, List<Pawn> fighters, List<Pawn> guests = null)
 		{
 			if (Active || tm == null || map == null) return false;
 			var valid = fighters?
 				.Where(p => p != null && p.Spawned && !p.Dead && !p.Downed)
 				.Distinct()
 				.ToList();
-			if (valid == null || valid.Count < 2) return false;
+			if (valid == null) return false;
+
+			var validGuests = guests?
+				.Where(p => p != null && p.Spawned && !p.Dead && !p.Downed && !valid.Contains(p))
+				.Distinct()
+				.ToList() ?? new List<Pawn>();
+			valid.AddRange(validGuests);
+			if (valid.Count < 2) return false;
 
 			_roster = valid;
 			_points.Clear();
@@ -38,7 +45,7 @@ namespace RimJoust.Tournament
 			_ticks = 0;
 			_tickFailures = 0;
 
-			if (!tm.TryStartTournament(valid))
+			if (!tm.TryStartTournament(valid, validGuests.Count > 0 ? validGuests : null))
 			{
 				_roster.Clear();
 				return false;
@@ -220,8 +227,8 @@ namespace RimJoust.Tournament
 		{
 			var map = MapOf();
 			var eligible = Eligible();
-			var target = map != null ? ArcheryContest.FindTarget(map) : null;
 			var spot = map != null ? ArcheryContest.FindSpot(map) : null;
+			var target = map != null && spot != null ? ArcheryContest.FindTarget(map, spot.Position) : null;
 			if (map == null || target == null || spot == null || eligible.Count < 2
 				|| !tm.Archery.TryStart(eligible, spot.Position, target, map))
 			{

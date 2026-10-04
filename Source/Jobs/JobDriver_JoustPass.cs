@@ -76,8 +76,7 @@ namespace RimJoust.Jobs
 			{
 				if (!_initialized)
 				{
-					_laneSign = job.count != 0 ? job.count : 1;
-
+					_laneSign = Opponent != null && pawn.thingIDNumber > Opponent.thingIDNumber ? -1 : 1;
 					_step = _laneSign > 0 ? 0 : 2;
 					_initialized = true;
 				}

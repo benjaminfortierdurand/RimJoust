@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using RimWorld;
 using UnityEngine;
 using Verse;
+using RimJoust.UI;
 
 namespace RimJoust.Buildings
 {
@@ -44,7 +45,7 @@ namespace RimJoust.Buildings
 			{
 				defaultLabel = "RimJoust.ShowSpotLabel".Translate(),
 				defaultDesc = "RimJoust.ShowSpotDesc".Translate(),
-				icon = TexCommand.GatherSpotActive,
+				icon = RimJoustIcons.ShowMarker,
 				isActive = () => !markerHidden,
 				toggleAction = () =>
 				{

@@ -926,11 +926,15 @@ namespace RimJoust.Tournament
 		private void DeclareChampion(Pawn champion)
 		{
 			_active = false;
+			var grandRunningNow = _grand != null && _grand.Active;
 			Step(ReleaseAllParticipants);
 			Step(ReleaseSquires);
 			Step(ReleaseHorses);
-			Step(RestoreCanRideAll);
-			Step(ReleaseGuests);
+			if (!grandRunningNow)
+			{
+				Step(RestoreCanRideAll);
+				Step(ReleaseGuests);
+			}
 			InvalidateFieldCache();
 			_boutA = _boutB = null;
 			_clearingLoser = null;
@@ -1032,13 +1036,19 @@ namespace RimJoust.Tournament
 				if (anyMarked && !IsJouster(c)) continue;
 				fighters.Add(c);
 			}
-			if (fighters.Count < 2)
+			var grandGuests = new List<Pawn>();
+			foreach (var p in map.mapPawns.AllPawnsSpawned)
+				if (IsEnrolledGuest(p) && GuestKnightUtility.IsEligibleGuest(p)
+					&& GuestKnightUtility.JoustLevelOf(p) >= GuestKnightUtility.MinJoustLevel)
+					grandGuests.Add(p);
+
+			if (fighters.Count + grandGuests.Count < 2)
 			{
-				Reject("RimJoust.NotEnoughKnights".Translate(fighters.Count));
+				Reject("RimJoust.NotEnoughKnights".Translate(fighters.Count + grandGuests.Count));
 				return false;
 			}
 
-			return _grand.TryStart(this, map, fighters);
+			return _grand.TryStart(this, map, fighters, grandGuests);
 		}
 
 		public void FinishGrandTournament(Pawn champion, List<Pawn> standings, Dictionary<int, int> points, int participants)
@@ -1086,6 +1096,9 @@ namespace RimJoust.Tournament
 					Log.Error("[RimJoust] honneurs du grand champion : " + e);
 				}
 			}
+
+			Step(RestoreCanRideAll);
+			Step(ReleaseGuests);
 
 			Step(() =>
 			{

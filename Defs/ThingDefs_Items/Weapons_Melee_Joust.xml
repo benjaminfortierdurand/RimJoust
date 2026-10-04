@@ -10,6 +10,7 @@
 		<graphicData>
 			<texPath>Things/Item/Equipment/WeaponMelee/RimJoust_JoustingLance</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
 			<drawSize>(1.7, 1.7)</drawSize>
 		</graphicData>
 		<uiIconScale>1.0</uiIconScale>

@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 	<name>RimJoust</name>
-	<author>BenFD</author>
+	<authors>
+		<li>BenFD</li>
+		<li>Tomson Johnson</li>
+	</authors>
 	<packageId>forti.rimjoust</packageId>
 	<supportedVersions>
 		<li>1.6</li>
 	</supportedVersions>
-	<modVersion>1.8.2</modVersion>
+	<modVersion>1.8.3</modVersion>
 	<modIconPath>UI/RimJoustIcon</modIconPath>
 	<description>Medieval tournaments for your colony. Two knights ride at each other with lances, a field of fighters settles it on foot with blunted maces, archers put three volleys into a straw butt, and a Grand Tournament chains all three events together and crowns a single champion on points.
 

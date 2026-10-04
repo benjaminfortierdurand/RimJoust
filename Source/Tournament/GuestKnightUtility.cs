@@ -7,6 +7,20 @@ using Verse.AI.Group;
 
 namespace RimJoust.Tournament
 {
+	public class SidearmPin : IExposable
+	{
+		public bool pinned;
+		public string prevDraftedDef;
+		public string prevDraftedStuff;
+
+		public void ExposeData()
+		{
+			Scribe_Values.Look(ref pinned, "pinned", false);
+			Scribe_Values.Look(ref prevDraftedDef, "prevDraftedDef");
+			Scribe_Values.Look(ref prevDraftedStuff, "prevDraftedStuff");
+		}
+	}
+
 	public class GuestLoadout : IExposable
 	{
 		public Pawn guest;
@@ -15,6 +29,7 @@ namespace RimJoust.Tournament
 		public ThingWithComps givenLance;
 		public bool gaveLance;
 		public bool followDrafted = true;
+		public SidearmPin sidearmPin = new SidearmPin();
 
 		public void ExposeData()
 		{
@@ -24,6 +39,8 @@ namespace RimJoust.Tournament
 			Scribe_References.Look(ref givenLance, "givenLance");
 			Scribe_Values.Look(ref gaveLance, "gaveLance", false);
 			Scribe_Values.Look(ref followDrafted, "followDrafted", true);
+			Scribe_Deep.Look(ref sidearmPin, "sidearmPin");
+			if (Scribe.mode == LoadSaveMode.PostLoadInit) sidearmPin ??= new SidearmPin();
 		}
 	}
 
@@ -34,6 +51,7 @@ namespace RimJoust.Tournament
 		public ThingWithComps givenLance;
 		public bool gaveLance;
 		public bool followDrafted = true;
+		public SidearmPin sidearmPin = new SidearmPin();
 
 		public void ExposeData()
 		{
@@ -42,6 +60,8 @@ namespace RimJoust.Tournament
 			Scribe_References.Look(ref givenLance, "givenLance");
 			Scribe_Values.Look(ref gaveLance, "gaveLance", false);
 			Scribe_Values.Look(ref followDrafted, "followDrafted", true);
+			Scribe_Deep.Look(ref sidearmPin, "sidearmPin");
+			if (Scribe.mode == LoadSaveMode.PostLoadInit) sidearmPin ??= new SidearmPin();
 		}
 	}
 
@@ -91,6 +111,7 @@ namespace RimJoust.Tournament
 					guest.equipment.AddEquipment(lance);
 					loadout.givenLance = lance;
 					loadout.gaveLance = true;
+					SimpleSidearmsBridge.Pin(guest, lance, loadout.sidearmPin);
 				}
 			}
 
@@ -170,6 +191,7 @@ namespace RimJoust.Tournament
 			knight.equipment.AddEquipment(lance);
 			loadout.givenLance = lance;
 			loadout.gaveLance = true;
+			SimpleSidearmsBridge.Pin(knight, lance, loadout.sidearmPin);
 			return loadout;
 		}
 
@@ -229,6 +251,7 @@ namespace RimJoust.Tournament
 			fighter.equipment.AddEquipment(weapon);
 			loadout.givenLance = weapon;
 			loadout.gaveLance = true;
+			SimpleSidearmsBridge.Pin(fighter, weapon, loadout.sidearmPin);
 			return loadout;
 		}
 
@@ -275,6 +298,7 @@ namespace RimJoust.Tournament
 			if (loadout == null) return;
 			var knight = loadout.knight;
 			RestoreAnimalFollowing(knight, loadout.followDrafted);
+			SimpleSidearmsBridge.Unpin(knight, loadout.sidearmPin, loadout.givenLance);
 			var modGave = loadout.gaveLance || loadout.storedWeapon != null;
 
 			if (loadout.givenLance != null)
@@ -303,6 +327,7 @@ namespace RimJoust.Tournament
 			if (guest == null) return;
 
 			if (guest.playerSettings != null) guest.playerSettings.followDrafted = loadout.followDrafted;
+			SimpleSidearmsBridge.Unpin(guest, loadout.sidearmPin, loadout.givenLance);
 
 			if (!guest.Dead && guest.IsMounted())
 			{

@@ -36,6 +36,10 @@ The base language is English, with French shipped as an example. Translations ar
 
 Open an issue here or comment on the Workshop page. A log (with [HugsLib](https://steamcommunity.com/sharedfiles/filedetails/?id=818773962) or the vanilla dev console) helps a lot.
 
+## Credits
+
+Textures by Tomson Johnson. Code and everything else by BenFD.
+
 ## License
 
 MIT. Do what you want with it, credit is appreciated.

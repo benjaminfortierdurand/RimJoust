@@ -97,7 +97,7 @@ namespace RimJoust.UI
 						action = () =>
 						{
 							var map = parent.Map;
-							var target = Tournament.ArcheryContest.FindTarget(map);
+							var target = Tournament.ArcheryContest.FindTarget(map, parent.Position);
 							if (target == null)
 							{
 								Messages.Message("RimJoust.ArcheryNeedTarget".Translate(),

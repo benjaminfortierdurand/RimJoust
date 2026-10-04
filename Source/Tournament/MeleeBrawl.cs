@@ -289,9 +289,6 @@ namespace RimJoust.Tournament
 
 		private void Retarget()
 		{
-			for (var i = 0; i < _loadouts.Count; i++)
-				GuestKnightUtility.EnsureLoanerWeapon(_loadouts[i]);
-
 			foreach (var p in _fighters)
 			{
 				if (p?.jobs == null) continue;
@@ -316,6 +313,9 @@ namespace RimJoust.Tournament
 				job.killIncappedTarget = false;
 				p.jobs.StartJob(job, JobCondition.InterruptForced);
 			}
+
+			for (var i = 0; i < _loadouts.Count; i++)
+				GuestKnightUtility.EnsureLoanerWeapon(_loadouts[i]);
 		}
 
 		private List<IntVec3> CrowdBand(Map map)
