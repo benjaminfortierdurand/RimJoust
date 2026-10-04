@@ -27,7 +27,7 @@
 	<!--
 		Krafs.Publicizer : à la compilation, génère une copie "publicizée" de la DLL référencée
 		où tous les membres internal/private deviennent accessibles comme s'ils étaient public.
-		Au runtime, c'est la DLL originale qui est chargée — donc pas d'incompatibilité.
+		Au runtime, c'est la DLL originale qui est chargée, donc pas d'incompatibilité.
 		C'est le pattern standard du modding RimWorld pour accéder aux internals de mods tiers.
 	-->
 	<ItemGroup>

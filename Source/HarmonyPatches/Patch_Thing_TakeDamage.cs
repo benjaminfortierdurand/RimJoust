@@ -86,7 +86,7 @@ namespace RimJoust.HarmonyPatches
 			if (!Rand.Chance(dismountChance))
 			{
 				if (VerboseLogging)
-					Log.Message($"[RimJoust:debug] → {damageDealt:F1} dégâts, chance {dismountChance:P0}, raté — passe blanche.");
+					Log.Message($"[RimJoust:debug] → {damageDealt:F1} dégâts, chance {dismountChance:P0}, raté, passe blanche.");
 				Messages.Message(
 					"RimJoust.HitButHeldOn".Translate(victim.LabelShort),
 					victim, MessageTypeDefOf.NeutralEvent, historical: false);

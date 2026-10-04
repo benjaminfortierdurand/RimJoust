@@ -105,7 +105,7 @@
 	<RimJoust.BoardWaiting>In the lists this round ({0})</RimJoust.BoardWaiting>
 	<RimJoust.BoardAdvanced>Advancing to next round ({0})</RimJoust.BoardAdvanced>
 	<RimJoust.BoardEliminated>Eliminated ({0})</RimJoust.BoardEliminated>
-	<RimJoust.BoardNobody>—</RimJoust.BoardNobody>
+	<RimJoust.BoardNobody>-</RimJoust.BoardNobody>
 	<RimJoust.DeadTag>(dead)</RimJoust.DeadTag>
 	<RimJoust.BoardTitleFinished>Jousting tournament finished</RimJoust.BoardTitleFinished>
 	<RimJoust.BoardChampionSection>Champion</RimJoust.BoardChampionSection>

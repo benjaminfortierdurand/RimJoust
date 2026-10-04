@@ -105,7 +105,7 @@
 	<RimJoust.BoardWaiting>En lice ce tour ({0})</RimJoust.BoardWaiting>
 	<RimJoust.BoardAdvanced>Qualifiés pour le tour suivant ({0})</RimJoust.BoardAdvanced>
 	<RimJoust.BoardEliminated>Éliminés ({0})</RimJoust.BoardEliminated>
-	<RimJoust.BoardNobody>—</RimJoust.BoardNobody>
+	<RimJoust.BoardNobody>-</RimJoust.BoardNobody>
 	<RimJoust.DeadTag>(mort)</RimJoust.DeadTag>
 	<RimJoust.BoardTitleFinished>Tournoi de joute terminé</RimJoust.BoardTitleFinished>
 	<RimJoust.BoardChampionSection>Champion</RimJoust.BoardChampionSection>

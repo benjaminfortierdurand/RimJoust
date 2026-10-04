@@ -55,9 +55,9 @@ namespace RimJoust.Debug
 		private static void WarnIfNotReady(Pawn pawn)
 		{
 			if (!pawn.HasJoustingLance())
-				Log.Warning($"[RimJoust] {pawn.LabelShort} n'a pas de lance de joute équipée — le coup ne désarçonnera pas.");
+				Log.Warning($"[RimJoust] {pawn.LabelShort} n'a pas de lance de joute équipée, le coup ne désarçonnera pas.");
 			if (!GiddyUp.ExtendedDataStorage.isMounted.Contains(pawn.thingIDNumber))
-				Log.Warning($"[RimJoust] {pawn.LabelShort} n'est pas monté — pas de désarçonnement possible.");
+				Log.Warning($"[RimJoust] {pawn.LabelShort} n'est pas monté, pas de désarçonnement possible.");
 		}
 
 		[DebugAction("RimJoust",
